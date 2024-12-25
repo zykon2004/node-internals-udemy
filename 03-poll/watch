@@ -1,0 +1,14 @@
+we can execute this command to watch when Node actually reads the file
+
+sudo fs_usage cmd node
+
+Notice that node issues the open file in the initial phase
+
+19:36:05.213245  open              F=22       (R__________X)  /Users/HusseinNasser/projects/node-course-content/03-poll/test.txt                     0.000027   node.6119075
+
+
+then later after the inital phase completes , poll phase starts it issues the read
+
+19:36:54.950306  fstat64           F=22                                                                                                              0.000005   node.6119076
+
+19:36:54.950659  read              F=22   B=0xb                                                                                                      0.000006   node.6119077
