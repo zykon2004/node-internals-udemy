@@ -1,5 +1,9 @@
 we can execute this command to watch when Node actually reads the file
 
+//for linux
+strace -f -t -o out.txt node 050-poll.js 
+
+//for mac
 sudo fs_usage cmd node
 
 Notice that node issues the open file in the initial phase
