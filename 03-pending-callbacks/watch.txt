@@ -1,0 +1,18 @@
+Run tcpdump to know exactly when the packet is being sent (SYN)
+
+ sudo tcpdump -i lo0 port 8888 -v -n
+filter on multiple ports  
+sudo tcpdump -i lo0 "port 8888 or port 8080" -v -n
+
+insert neccessary delays to know when they hit. this is the output notice they will come
+
+ 20:08:18.643027 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 64, bad cksum 0 (->3cb6)!)
+    127.0.0.1.57155 > 127.0.0.1.8888: Flags [S], cksum 0xfe34 (incorrect -> 0x03c5), seq 363514242, win 65535, options [mss 16344,nop,wscale 6,nop,nop,TS val 629339237 ecr 0,sackOK,eol], length 0
+20:08:18.643077 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40, bad cksum 0 (->3cce)!)
+    127.0.0.1.8888 > 127.0.0.1.57155: Flags [R.], cksum 0xfe1c (incorrect -> 0xd0a4), seq 0, ack 363514243, win 0, length 0
+
+
+
+///kill job 
+ps -e | grep fs_usage
+kill -9 48764
