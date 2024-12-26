@@ -22,7 +22,7 @@ const server = net.createServer((socket) => {
 });
 
 // Server listens on port 3000
-server.listen(3000 ,() => {
+server.listen(3000 ,'0.0.0.0',  () => {
     console.log('Server listening on port 3000');
 });
 
@@ -31,6 +31,13 @@ server.on('error', (err) => {
     console.error('Server error:', err);
 });
 
+
+function test(){
+console.log(Date.now() + "test");
+	setTimeout(test, 4000);
+}
+
+//test();
 console.log("start")
 for (let i = 0; i < 10000000000; i++);
 console.log("end")
