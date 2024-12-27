@@ -1,0 +1,6 @@
+
+//for linux, run a trace to watch all sys calls
+strace -f -t -o out.txt node 050-poll.js 
+
+//for mac watch system calls
+sudo fs_usage cmd node
