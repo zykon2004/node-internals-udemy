@@ -13,7 +13,7 @@ const timerCallback = () => {
 
 setTimeout(timerCallback, 100);
 
-const f = '/Users/HusseinNasser/projects/node-course-content/03-poll/test.txt'
+const f = 'test.txt'
 //in the intial phase this file will only be opened (not read)
 //if it fails we immediately know, we add a callback in the poll queue with failure.
 fs.readFile(f, readFileCallback);
