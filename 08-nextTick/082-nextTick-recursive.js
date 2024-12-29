@@ -2,10 +2,11 @@ console.log("start");
 for (let i =0; i< 100000000; i++);
 console.log ("end");
 process.nextTick( ()=>{
-  
   console.log("nextTick after initial phase") 
-  //danger! if you keep doing this it will starve other phases
-  process.nextTick (() => console.log ("another nextTick "))
+  //danger! if you keep doing this it will 
+  //starve other phases
+  process.nextTick (() =>
+    console.log ("another nextTick "))
 }
 ) 
 
