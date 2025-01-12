@@ -1,0 +1,43 @@
+15:09:15.287173    RdMeta[S]       D=0x0011bce5  B=0x1000   /dev/disk3  /dev/disk3                                                                                                                                            0.001097 W com.apple.geod.358235
+15:09:15.287523    RdMeta[S]       D=0x0001720f  B=0x1000   /dev/disk3s5  /dev/disk3s5                                                                                                                                        0.000296 W com.apple.geod.358235
+15:09:15.324031  socket            F=20       <UNKNOWN, SOCK_STREAM, 0x0>                                                                                                                                                     0.000121   node.358535
+15:09:15.324039  ioctl             F=20  <CMD=0x8004667e>                                                                                                                                                                     0.000007   node.358535
+15:09:15.324044  fcntl             F=20  <SETFD>                                                                                                                                                                              0.000005   node.358535
+15:09:15.324090  bind              F=20                                                                                                                                                                                       0.000029   node.358535
+15:09:15.324130  listen            F=20                                                                                                                                                                                       0.000023   node.358535
+15:09:15.324532  write             F=16   B=0x10                                                                                                                                                                              0.000041   node.358535
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
