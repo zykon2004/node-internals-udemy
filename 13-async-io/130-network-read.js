@@ -10,7 +10,7 @@ const client = new net.Socket();
 setTimeout(connect, 0);
 //setTimeout(listen, 20000);
 //setTimeout(read, 10000);
-setTimeout(write, 10000);
+//setTimeout(write, 10000);
 setTimeout(close, 20000);
 
 function connect(){
