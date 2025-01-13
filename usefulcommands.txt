@@ -5,6 +5,5 @@ strace -f -t -o out.txt node 050-poll.js
 //for mac watch system calls
 sudo fs_usage cmd node
 
-
 //capturing kqueue in mac
 sudo ktrace trace -p node | grep kqueue
