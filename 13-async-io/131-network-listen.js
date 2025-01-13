@@ -5,20 +5,29 @@ const client = new net.Socket();
 
 // Connect to the server that exists (this is example.com)
 
-//connect, read and write, 10 seconds apart each
+//connect, listen, read and write, 10 seconds apart each
 
-setTimeout(connect, 0);
+setTimeout(listen, 0);
+setTimeout(connect,5000 );
 setTimeout(read, 10000);
 setTimeout(write, 20000);
 setTimeout(close, 30000);
 
 function connect(){
-    client.connect(80, '93.184.215.14', () => {
-        console.log(`Connected to server at ${'93.184.215.14'}:${80}`);
+	//a socket connection is created (client) 
+    client.connect(8080, '127.0.0.1', () => {
+        console.log(`Connected to server at ${'127.0.0.1'}:${8080}`);
     });
     client.on("data", (data) => console.log( "got some data" + data.toString()));
 }
 
+function listen(){
+	//a listening socket is created 
+    const server = net.createServer(() => {}).listen(8080);
+    server.on("listening", ()=> console.log("server created.")) 
+	//when a connection is accepted a new connection is created (the server side connection)
+ 
+}
 function close(){
     console.log("close event...")
     client.destroy();

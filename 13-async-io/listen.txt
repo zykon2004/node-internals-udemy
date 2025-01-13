@@ -1,43 +1,1491 @@
-15:09:15.287173    RdMeta[S]       D=0x0011bce5  B=0x1000   /dev/disk3  /dev/disk3                                                                                                                                            0.001097 W com.apple.geod.358235
-15:09:15.287523    RdMeta[S]       D=0x0001720f  B=0x1000   /dev/disk3s5  /dev/disk3s5                                                                                                                                        0.000296 W com.apple.geod.358235
-15:09:15.324031  socket            F=20       <UNKNOWN, SOCK_STREAM, 0x0>                                                                                                                                                     0.000121   node.358535
-15:09:15.324039  ioctl             F=20  <CMD=0x8004667e>                                                                                                                                                                     0.000007   node.358535
-15:09:15.324044  fcntl             F=20  <SETFD>                                                                                                                                                                              0.000005   node.358535
-15:09:15.324090  bind              F=20                                                                                                                                                                                       0.000029   node.358535
-15:09:15.324130  listen            F=20                                                                                                                                                                                       0.000023   node.358535
-15:09:15.324532  write             F=16   B=0x10                                                                                                                                                                              0.000041   node.358535
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+3048  04:44:02 execve("/usr/bin/node", ["node", "131-network-listen.js"], 0x7ffcd8714108 /* 25 vars */) = 0
+3048  04:44:02 brk(NULL)                = 0x56385a07e000
+3048  04:44:02 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffea90c6810) = -1 EINVAL (Invalid argument)
+3048  04:44:02 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef8f20e000
+3048  04:44:02 readlink("/proc/self/exe", "/usr/bin/node", 4096) = 13
+3048  04:44:02 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+3048  04:44:02 openat(AT_FDCWD, "/usr/bin/lib.target/glibc-hwcaps/x86-64-v3/libnode.so.72", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3048  04:44:02 newfstatat(AT_FDCWD, "/usr/bin/lib.target/glibc-hwcaps/x86-64-v3", 0x7ffea90c5a30, 0) = -1 ENOENT (No such file or directory)
+3048  04:44:02 openat(AT_FDCWD, "/usr/bin/lib.target/glibc-hwcaps/x86-64-v2/libnode.so.72", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3048  04:44:02 newfstatat(AT_FDCWD, "/usr/bin/lib.target/glibc-hwcaps/x86-64-v2", 0x7ffea90c5a30, 0) = -1 ENOENT (No such file or directory)
+3048  04:44:02 openat(AT_FDCWD, "/usr/bin/lib.target/tls/haswell/x86_64/libnode.so.72", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3048  04:44:02 newfstatat(AT_FDCWD, "/usr/bin/lib.target/tls/haswell/x86_64", 0x7ffea90c5a30, 0) = -1 ENOENT (No such file or directory)
+3048  04:44:02 openat(AT_FDCWD, "/usr/bin/lib.target/tls/haswell/libnode.so.72", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3048  04:44:02 newfstatat(AT_FDCWD, "/usr/bin/lib.target/tls/haswell", 0x7ffea90c5a30, 0) = -1 ENOENT (No such file or directory)
+3048  04:44:02 openat(AT_FDCWD, "/usr/bin/lib.target/tls/x86_64/libnode.so.72", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3048  04:44:02 newfstatat(AT_FDCWD, "/usr/bin/lib.target/tls/x86_64", 0x7ffea90c5a30, 0) = -1 ENOENT (No such file or directory)
+3048  04:44:02 openat(AT_FDCWD, "/usr/bin/lib.target/tls/libnode.so.72", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3048  04:44:02 newfstatat(AT_FDCWD, "/usr/bin/lib.target/tls", 0x7ffea90c5a30, 0) = -1 ENOENT (No such file or directory)
+3048  04:44:02 openat(AT_FDCWD, "/usr/bin/lib.target/haswell/x86_64/libnode.so.72", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3048  04:44:02 newfstatat(AT_FDCWD, "/usr/bin/lib.target/haswell/x86_64", 0x7ffea90c5a30, 0) = -1 ENOENT (No such file or directory)
+3048  04:44:02 openat(AT_FDCWD, "/usr/bin/lib.target/haswell/libnode.so.72", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3048  04:44:02 newfstatat(AT_FDCWD, "/usr/bin/lib.target/haswell", 0x7ffea90c5a30, 0) = -1 ENOENT (No such file or directory)
+3048  04:44:02 openat(AT_FDCWD, "/usr/bin/lib.target/x86_64/libnode.so.72", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3048  04:44:02 newfstatat(AT_FDCWD, "/usr/bin/lib.target/x86_64", 0x7ffea90c5a30, 0) = -1 ENOENT (No such file or directory)
+3048  04:44:02 openat(AT_FDCWD, "/usr/bin/lib.target/libnode.so.72", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3048  04:44:02 newfstatat(AT_FDCWD, "/usr/bin/lib.target", 0x7ffea90c5a30, 0) = -1 ENOENT (No such file or directory)
+3048  04:44:02 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29387, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 29387, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fef8f206000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnode.so.72", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=41103176, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 41223608, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8cab5000
+3048  04:44:02 mprotect(0x7fef8d240000, 32268288, PROT_NONE) = 0
+3048  04:44:02 mmap(0x7fef8d240000, 25423872, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x78b000) = 0x7fef8d240000
+3048  04:44:02 mmap(0x7fef8ea7f000, 6840320, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fca000) = 0x7fef8ea7f000
+3048  04:44:02 mmap(0x7fef8f106000, 929792, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2650000) = 0x7fef8f106000
+3048  04:44:02 mmap(0x7fef8f1e9000, 116152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fef8f1e9000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+3048  04:44:02 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+3048  04:44:02 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0I\17\357\204\3$\f\221\2039x\324\224\323\236S"..., 68, 896) = 68
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+3048  04:44:02 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8c88c000
+3048  04:44:02 mprotect(0x7fef8c8b4000, 2023424, PROT_NONE) = 0
+3048  04:44:02 mmap(0x7fef8c8b4000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fef8c8b4000
+3048  04:44:02 mmap(0x7fef8ca49000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fef8ca49000
+3048  04:44:02 mmap(0x7fef8caa2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7fef8caa2000
+3048  04:44:02 mmap(0x7fef8caa8000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fef8caa8000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8c870000
+3048  04:44:02 mprotect(0x7fef8c872000, 98304, PROT_NONE) = 0
+3048  04:44:02 mmap(0x7fef8c872000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fef8c872000
+3048  04:44:02 mmap(0x7fef8c883000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7fef8c883000
+3048  04:44:02 mmap(0x7fef8c88a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7fef8c88a000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libuv.so.1", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=198744, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 202448, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8c83e000
+3048  04:44:02 mprotect(0x7fef8c845000, 167936, PROT_NONE) = 0
+3048  04:44:02 mmap(0x7fef8c845000, 126976, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7fef8c845000
+3048  04:44:02 mmap(0x7fef8c864000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7fef8c864000
+3048  04:44:02 mmap(0x7fef8c86e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x7fef8c86e000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbrotlidec.so.1", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=51512, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 53352, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8c830000
+3048  04:44:02 mmap(0x7fef8c831000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fef8c831000
+3048  04:44:02 mmap(0x7fef8c839000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7fef8c839000
+3048  04:44:02 mmap(0x7fef8c83c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7fef8c83c000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbrotlienc.so.1", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=587944, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef8c82e000
+3048  04:44:02 mmap(NULL, 589944, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8c79d000
+3048  04:44:02 mmap(0x7fef8c79e000, 249856, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fef8c79e000
+3048  04:44:02 mmap(0x7fef8c7db000, 331776, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3e000) = 0x7fef8c7db000
+3048  04:44:02 mmap(0x7fef8c82c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8e000) = 0x7fef8c82c000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcares.so.2", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=88080, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 90152, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8c786000
+3048  04:44:02 mmap(0x7fef8c788000, 65536, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fef8c788000
+3048  04:44:02 mmap(0x7fef8c798000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x7fef8c798000
+3048  04:44:02 mmap(0x7fef8c79b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x7fef8c79b000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnghttp2.so.14", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166288, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 168208, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8c75c000
+3048  04:44:02 mmap(0x7fef8c761000, 86016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7fef8c761000
+3048  04:44:02 mmap(0x7fef8c776000, 49152, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7fef8c776000
+3048  04:44:02 mmap(0x7fef8c782000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7fef8c782000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libicui18n.so.70", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3328472, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 3334864, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8c42d000
+3048  04:44:02 mmap(0x7fef8c514000, 1716224, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe7000) = 0x7fef8c514000
+3048  04:44:02 mmap(0x7fef8c6b7000, 598016, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28a000) = 0x7fef8c6b7000
+3048  04:44:02 mmap(0x7fef8c749000, 73728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x31b000) = 0x7fef8c749000
+3048  04:44:02 mmap(0x7fef8c75b000, 720, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fef8c75b000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libicuuc.so.70", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2062664, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 2073312, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8c232000
+3048  04:44:02 mmap(0x7fef8c298000, 995328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x66000) = 0x7fef8c298000
+3048  04:44:02 mmap(0x7fef8c38b000, 573440, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x159000) = 0x7fef8c38b000
+3048  04:44:02 mmap(0x7fef8c417000, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e4000) = 0x7fef8c417000
+3048  04:44:02 mmap(0x7fef8c42b000, 4832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fef8c42b000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2260296, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 2275520, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8c006000
+3048  04:44:02 mprotect(0x7fef8c0a0000, 1576960, PROT_NONE) = 0
+3048  04:44:02 mmap(0x7fef8c0a0000, 1118208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9a000) = 0x7fef8c0a0000
+3048  04:44:02 mmap(0x7fef8c1b1000, 454656, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ab000) = 0x7fef8c1b1000
+3048  04:44:02 mmap(0x7fef8c221000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21a000) = 0x7fef8c221000
+3048  04:44:02 mmap(0x7fef8c22f000, 10432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fef8c22f000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef8c004000
+3048  04:44:02 mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8bf1d000
+3048  04:44:02 mmap(0x7fef8bf2b000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fef8bf2b000
+3048  04:44:02 mmap(0x7fef8bfa7000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7fef8bfa7000
+3048  04:44:02 mmap(0x7fef8c002000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7fef8c002000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125488, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 127720, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8befd000
+3048  04:44:02 mmap(0x7fef8bf00000, 94208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fef8bf00000
+3048  04:44:02 mmap(0x7fef8bf17000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7fef8bf17000
+3048  04:44:02 mmap(0x7fef8bf1b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7fef8bf1b000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbrotlicommon.so.1", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=137560, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 139320, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8beda000
+3048  04:44:02 mmap(0x7fef8bedb000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fef8bedb000
+3048  04:44:02 mmap(0x7fef8bedc000, 126976, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fef8bedc000
+3048  04:44:02 mmap(0x7fef8befb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7fef8befb000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libicudata.so.70", O_RDONLY|O_CLOEXEC) = 3
+3048  04:44:02 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3048  04:44:02 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29476472, ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 mmap(NULL, 29478936, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef8a2bc000
+3048  04:44:02 mmap(0x7fef8a2bd000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fef8a2bd000
+3048  04:44:02 mmap(0x7fef8a2be000, 29466624, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fef8a2be000
+3048  04:44:02 mmap(0x7fef8bed8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c1b000) = 0x7fef8bed8000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef8a2ba000
+3048  04:44:02 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef8a2b7000
+3048  04:44:02 arch_prctl(ARCH_SET_FS, 0x7fef8a2b7780) = 0
+3048  04:44:02 set_tid_address(0x7fef8a2b7a50) = 3048
+3048  04:44:02 set_robust_list(0x7fef8a2b7a60, 24) = 0
+3048  04:44:02 rseq(0x7fef8a2b8120, 0x20, 0, 0x53053053) = 0
+3048  04:44:02 mprotect(0x7fef8bed8000, 4096, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8caa2000, 16384, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8befb000, 4096, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8bf1b000, 4096, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8c002000, 4096, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8c221000, 45056, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8c417000, 77824, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8c749000, 69632, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8c782000, 12288, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8c79b000, 4096, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8c82c000, 4096, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8c83c000, 4096, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8c86e000, 4096, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8c88a000, 4096, PROT_READ) = 0
+3048  04:44:02 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef8a2b4000
+3048  04:44:02 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef8a2af000
+3048  04:44:02 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef8a2a6000
+3048  04:44:02 mmap(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef8a295000
+3048  04:44:02 mprotect(0x7fef8f106000, 860160, PROT_READ) = 0
+3048  04:44:02 mprotect(0x56384eb4e000, 4096, PROT_READ) = 0
+3048  04:44:02 mprotect(0x7fef8f248000, 8192, PROT_READ) = 0
+3048  04:44:02 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3048  04:44:02 munmap(0x7fef8f206000, 29387) = 0
+3048  04:44:02 getrandom("\x2c\x73\x66\xd8\xa4\x55\x33\xd8", 8, GRND_NONBLOCK) = 8
+3048  04:44:02 brk(NULL)                = 0x56385a07e000
+3048  04:44:02 brk(0x56385a09f000)      = 0x56385a09f000
+3048  04:44:02 futex(0x7fef8c22f77c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3048  04:44:02 brk(0x56385a0c0000)      = 0x56385a0c0000
+3048  04:44:02 futex(0x7fef8c86f620, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3048  04:44:02 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fef8c8ce520}, NULL, 8) = 0
+3048  04:44:02 getuid()                 = 1000
+3048  04:44:02 geteuid()                = 1000
+3048  04:44:02 getgid()                 = 1000
+3048  04:44:02 getegid()                = 1000
+3048  04:44:02 rt_sigprocmask(SIG_SETMASK, [USR1], NULL, 8) = 0
+3048  04:44:02 newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 newfstatat(2, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 fcntl(0, F_GETFL)        = 0x2 (flags O_RDWR)
+3048  04:44:02 ioctl(0, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:02 ioctl(0, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:02 fcntl(1, F_GETFL)        = 0x2 (flags O_RDWR)
+3048  04:44:02 ioctl(1, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:02 ioctl(1, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:02 fcntl(2, F_GETFL)        = 0x2 (flags O_RDWR)
+3048  04:44:02 ioctl(2, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:02 ioctl(2, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:02 rt_sigaction(SIGINT, {sa_handler=0x7fef8d344170, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESETHAND|0xffffffff00000000, sa_restorer=0x7fef8c8ce520}, NULL, 8) = 0
+3048  04:44:02 rt_sigaction(SIGTERM, {sa_handler=0x7fef8d344170, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESETHAND|0xffffffff00000000, sa_restorer=0x7fef8c8ce520}, NULL, 8) = 0
+3048  04:44:02 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+3048  04:44:02 prlimit64(0, RLIMIT_NOFILE, {rlim_cur=1024*1024, rlim_max=1024*1024}, NULL) = 0
+3048  04:44:02 ioctl(0, FIOCLEX)        = 0
+3048  04:44:02 ioctl(1, FIOCLEX)        = 0
+3048  04:44:02 ioctl(2, FIOCLEX)        = 0
+3048  04:44:02 ioctl(3, FIOCLEX)        = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(4, FIOCLEX)        = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(5, FIOCLEX)        = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(6, FIOCLEX)        = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(7, FIOCLEX)        = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(8, FIOCLEX)        = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(9, FIOCLEX)        = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(10, FIOCLEX)       = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(11, FIOCLEX)       = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(12, FIOCLEX)       = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(13, FIOCLEX)       = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(14, FIOCLEX)       = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(15, FIOCLEX)       = -1 EBADF (Bad file descriptor)
+3048  04:44:02 ioctl(16, FIOCLEX)       = -1 EBADF (Bad file descriptor)
+3048  04:44:02 getuid()                 = 1000
+3048  04:44:02 geteuid()                = 1000
+3048  04:44:02 getgid()                 = 1000
+3048  04:44:02 getegid()                = 1000
+3048  04:44:02 getuid()                 = 1000
+3048  04:44:02 geteuid()                = 1000
+3048  04:44:02 getgid()                 = 1000
+3048  04:44:02 getegid()                = 1000
+3048  04:44:02 getuid()                 = 1000
+3048  04:44:02 geteuid()                = 1000
+3048  04:44:02 getgid()                 = 1000
+3048  04:44:02 getegid()                = 1000
+3048  04:44:02 getuid()                 = 1000
+3048  04:44:02 geteuid()                = 1000
+3048  04:44:02 getgid()                 = 1000
+3048  04:44:02 getegid()                = 1000
+3048  04:44:02 getuid()                 = 1000
+3048  04:44:02 geteuid()                = 1000
+3048  04:44:02 getgid()                 = 1000
+3048  04:44:02 getegid()                = 1000
+3048  04:44:02 getuid()                 = 1000
+3048  04:44:02 geteuid()                = 1000
+3048  04:44:02 getgid()                 = 1000
+3048  04:44:02 getegid()                = 1000
+3048  04:44:02 futex(0x7fef8c42c090, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3048  04:44:02 newfstatat(AT_FDCWD, "/usr/share/zoneinfo-icu/44/le/zoneinfo64.res", {st_mode=S_IFREG|0644, st_size=151504, ...}, 0) = 0
+3048  04:44:02 openat(AT_FDCWD, "/usr/share/zoneinfo-icu/44/le/zoneinfo64.res", O_RDONLY) = 3
+3048  04:44:02 mmap(NULL, 151504, PROT_READ, MAP_SHARED, 3, 0) = 0x7fef8a270000
+3048  04:44:02 close(3)                 = 0
+3048  04:44:02 getuid()                 = 1000
+3048  04:44:02 geteuid()                = 1000
+3048  04:44:02 getgid()                 = 1000
+3048  04:44:02 getegid()                = 1000
+3048  04:44:02 epoll_create1(EPOLL_CLOEXEC) = 3
+3048  04:44:02 pipe2([4, 5], O_CLOEXEC) = 0
+3048  04:44:02 write(5, "*", 1)         = 1
+3048  04:44:02 futex(0x7fef8c86f638, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3048  04:44:02 pipe2([6, 7], O_NONBLOCK|O_CLOEXEC) = 0
+3048  04:44:02 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 8
+3048  04:44:02 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3048  04:44:02 rt_sigaction(SIGRT_1, {sa_handler=0x7fef8c91d870, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7fef8c8ce520}, NULL, 8) = 0
+3048  04:44:02 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+3048  04:44:02 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fef89a6f000
+3048  04:44:02 mprotect(0x7fef89a70000, 8388608, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 rt_sigprocmask(SIG_BLOCK, ~[], [USR1], 8) = 0
+3048  04:44:02 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7fef8a26f910, parent_tid=0x7fef8a26f910, exit_signal=0, stack=0x7fef89a6f000, stack_size=0x7ffec0, tls=0x7fef8a26f640} => {parent_tid=[3049]}, 88) = 3049
+3048  04:44:02 rt_sigprocmask(SIG_SETMASK, [USR1], NULL, 8) = 0
+3048  04:44:02 futex(0x56385a0b5140, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3049  04:44:02 rseq(0x7fef8a26ffe0, 0x20, 0, 0x53053053) = 0
+3049  04:44:02 set_robust_list(0x7fef8a26f920, 24) = 0
+3049  04:44:02 rt_sigprocmask(SIG_SETMASK, [USR1], NULL, 8) = 0
+3049  04:44:02 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fef81a6f000
+3049  04:44:02 munmap(0x7fef81a6f000, 39391232) = 0
+3049  04:44:02 munmap(0x7fef88000000, 27717632) = 0
+3049  04:44:02 mprotect(0x7fef84000000, 135168, PROT_READ|PROT_WRITE) = 0
+3049  04:44:02 epoll_create1(EPOLL_CLOEXEC) = 9
+3049  04:44:02 pipe2([10, 11], O_NONBLOCK|O_CLOEXEC) = 0
+3049  04:44:02 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 12
+3049  04:44:02 futex(0x56385a0b5140, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:02 <... futex resumed>)     = 0
+3049  04:44:02 <... futex resumed>)     = 1
+3048  04:44:02 prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+3049  04:44:02 epoll_ctl(9, EPOLL_CTL_ADD, 10, {events=EPOLLIN, data={u32=10, u64=10}} <unfinished ...>
+3048  04:44:02 <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3049  04:44:02 <... epoll_ctl resumed>) = 0
+3048  04:44:02 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+3049  04:44:02 epoll_ctl(9, EPOLL_CTL_ADD, 12, {events=EPOLLIN, data={u32=12, u64=12}} <unfinished ...>
+3048  04:44:02 <... mmap resumed>)      = 0x7fef8926e000
+3049  04:44:02 <... epoll_ctl resumed>) = 0
+3048  04:44:02 mprotect(0x7fef8926f000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+3049  04:44:02 epoll_wait(9,  <unfinished ...>
+3048  04:44:02 <... mprotect resumed>)  = 0
+3048  04:44:02 rt_sigprocmask(SIG_BLOCK, ~[], [USR1], 8) = 0
+3048  04:44:02 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7fef89a6e910, parent_tid=0x7fef89a6e910, exit_signal=0, stack=0x7fef8926e000, stack_size=0x7ffec0, tls=0x7fef89a6e640} => {parent_tid=[3050]}, 88) = 3050
+3048  04:44:02 rt_sigprocmask(SIG_SETMASK, [USR1], NULL, 8) = 0
+3050  04:44:02 rseq(0x7fef89a6efe0, 0x20, 0, 0x53053053 <unfinished ...>
+3048  04:44:02 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3050  04:44:02 <... rseq resumed>)      = 0
+3048  04:44:02 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fef88a6d000
+3050  04:44:02 set_robust_list(0x7fef89a6e920, 24 <unfinished ...>
+3048  04:44:02 mprotect(0x7fef88a6e000, 8388608, PROT_READ|PROT_WRITE) = 0
+3050  04:44:02 <... set_robust_list resumed>) = 0
+3048  04:44:02 rt_sigprocmask(SIG_BLOCK, ~[], [USR1], 8) = 0
+3050  04:44:02 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+3048  04:44:02 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7fef8926d910, parent_tid=0x7fef8926d910, exit_signal=0, stack=0x7fef88a6d000, stack_size=0x7ffec0, tls=0x7fef8926d640} <unfinished ...>
+3050  04:44:02 <... rt_sigprocmask resumed>NULL, 8) = 0
+3048  04:44:02 <... clone3 resumed> => {parent_tid=[3051]}, 88) = 3051
+3050  04:44:02 futex(0x7ffea90c6520, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:02 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+3051  04:44:02 rseq(0x7fef8926dfe0, 0x20, 0, 0x53053053 <unfinished ...>
+3048  04:44:02 <... rt_sigprocmask resumed>NULL, 8) = 0
+3051  04:44:02 <... rseq resumed>)      = 0
+3048  04:44:02 prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+3051  04:44:02 set_robust_list(0x7fef8926d920, 24 <unfinished ...>
+3048  04:44:02 <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3051  04:44:02 <... set_robust_list resumed>) = 0
+3048  04:44:02 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+3051  04:44:02 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+3048  04:44:02 <... mmap resumed>)      = 0x7fef8826c000
+3051  04:44:02 <... rt_sigprocmask resumed>NULL, 8) = 0
+3048  04:44:02 mprotect(0x7fef8826d000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+3051  04:44:02 futex(0x7ffea90c6520, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:02 <... mprotect resumed>)  = 0
+3048  04:44:02 rt_sigprocmask(SIG_BLOCK, ~[], [USR1], 8) = 0
+3048  04:44:02 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7fef88a6c910, parent_tid=0x7fef88a6c910, exit_signal=0, stack=0x7fef8826c000, stack_size=0x7ffec0, tls=0x7fef88a6c640} => {parent_tid=[3052]}, 88) = 3052
+3052  04:44:02 rseq(0x7fef88a6cfe0, 0x20, 0, 0x53053053 <unfinished ...>
+3048  04:44:02 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+3052  04:44:02 <... rseq resumed>)      = 0
+3048  04:44:02 <... rt_sigprocmask resumed>NULL, 8) = 0
+3052  04:44:02 set_robust_list(0x7fef88a6c920, 24 <unfinished ...>
+3048  04:44:02 prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+3052  04:44:02 <... set_robust_list resumed>) = 0
+3048  04:44:02 <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3052  04:44:02 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+3048  04:44:02 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+3052  04:44:02 <... rt_sigprocmask resumed>NULL, 8) = 0
+3048  04:44:02 <... mmap resumed>)      = 0x7fef837ff000
+3052  04:44:02 futex(0x7ffea90c6520, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:02 mprotect(0x7fef83800000, 8388608, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 rt_sigprocmask(SIG_BLOCK, ~[], [USR1], 8) = 0
+3048  04:44:02 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7fef83fff910, parent_tid=0x7fef83fff910, exit_signal=0, stack=0x7fef837ff000, stack_size=0x7ffec0, tls=0x7fef83fff640} => {parent_tid=[3053]}, 88) = 3053
+3053  04:44:02 rseq(0x7fef83ffffe0, 0x20, 0, 0x53053053 <unfinished ...>
+3048  04:44:02 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+3053  04:44:02 <... rseq resumed>)      = 0
+3048  04:44:02 <... rt_sigprocmask resumed>NULL, 8) = 0
+3053  04:44:02 set_robust_list(0x7fef83fff920, 24 <unfinished ...>
+3048  04:44:02 futex(0x7ffea90c6520, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:02 <... set_robust_list resumed>) = 0
+3048  04:44:02 <... futex resumed>)     = 1
+3050  04:44:02 <... futex resumed>)     = 0
+3053  04:44:02 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+3048  04:44:02 futex(0x7ffea90c6578, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3053  04:44:02 <... rt_sigprocmask resumed>NULL, 8) = 0
+3050  04:44:02 futex(0x7ffea90c6578, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:02 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3053  04:44:02 futex(0x7ffea90c6520, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3050  04:44:02 <... futex resumed>)     = 0
+3048  04:44:02 futex(0x7ffea90c6520, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3050  04:44:02 futex(0x7ffea90c6520, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:02 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3051  04:44:02 <... futex resumed>)     = 0
+3050  04:44:02 <... futex resumed>)     = 1
+3048  04:44:02 futex(0x7ffea90c6520, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:02 futex(0x7ffea90c657c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:02 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 <... futex resumed>)     = 1
+3052  04:44:02 <... futex resumed>)     = 0
+3048  04:44:02 futex(0x7ffea90c6520, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3051  04:44:02 <... futex resumed>)     = 0
+3052  04:44:02 futex(0x7ffea90c6520, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3051  04:44:02 futex(0x7ffea90c6520, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:02 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3053  04:44:02 <... futex resumed>)     = 0
+3051  04:44:02 <... futex resumed>)     = 1
+3052  04:44:02 futex(0x7ffea90c6520, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:02 futex(0x7ffea90c6520, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:02 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3052  04:44:02 <... futex resumed>)     = 1
+3048  04:44:02 <... futex resumed>)     = 0
+3053  04:44:02 <... futex resumed>)     = 0
+3052  04:44:02 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 futex(0x7ffea90c6520, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:02 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 <... futex resumed>)     = 0
+3048  04:44:02 futex(0x7fef8c22f788, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3048  04:44:02 epoll_create1(EPOLL_CLOEXEC) = 13
+3048  04:44:02 pipe2([14, 15], O_NONBLOCK|O_CLOEXEC) = 0
+3048  04:44:02 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 16
+3048  04:44:02 brk(0x56385a0e7000)      = 0x56385a0e7000
+3048  04:44:02 openat(AT_FDCWD, "/sys/fs/cgroup/memory/memory.limit_in_bytes", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3048  04:44:02 openat(AT_FDCWD, "/proc/meminfo", O_RDONLY|O_CLOEXEC) = 17
+3048  04:44:02 read(17, "MemTotal:        7991400 kB\nMemF"..., 4095) = 1419
+3048  04:44:02 close(17)                = 0
+3048  04:44:02 brk(0x56385a10e000)      = 0x56385a10e000
+3048  04:44:02 getpid()                 = 3048
+3048  04:44:02 futex(0x7fef8f1edf08, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3048  04:44:02 futex(0x7fef8f1eddc8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3048  04:44:02 futex(0x7fef8f1eddbc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3048  04:44:02 futex(0x7fef8f1eddb4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3048  04:44:02 getpid()                 = 3048
+3048  04:44:02 getrandom("\x42\x4e\xa3\xb6\xdb\x00\x60\x6e\xad\x02\x15\x55\x0c\xa0\x91\x0d\x9f\x92\x96\xfc\x83\x81\x50\xeb\x4d\x34\x29\xb3\x87\x3b\xd7\x24", 32, 0) = 32
+3048  04:44:02 getpid()                 = 3048
+3048  04:44:02 futex(0x7fef8f1eded8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3048  04:44:02 getpid()                 = 3048
+3048  04:44:02 getpid()                 = 3048
+3048  04:44:02 getpid()                 = 3048
+3048  04:44:02 getpid()                 = 3048
+3048  04:44:02 mmap(0x25efbeda6000, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x25efbeda6000
+3048  04:44:02 brk(0x56385a12f000)      = 0x56385a12f000
+3048  04:44:02 mmap(0x298084080000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x298084080000
+3048  04:44:02 munmap(0x2980840c0000, 258048) = 0
+3048  04:44:02 mprotect(0x298084080000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 brk(0x56385a150000)      = 0x56385a150000
+3048  04:44:02 getpid()                 = 3048
+3048  04:44:02 getpid()                 = 3048
+3048  04:44:02 mprotect(0x298084080000, 262144, PROT_READ) = 0
+3048  04:44:02 mmap(0x7e68c600000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7e68c600000
+3048  04:44:02 munmap(0x7e68c640000, 258048) = 0
+3048  04:44:02 mprotect(0x7e68c600000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mmap(0x319829a80000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x319829a80000
+3048  04:44:02 munmap(0x319829ac0000, 258048) = 0
+3048  04:44:02 mprotect(0x319829a80000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mmap(0x210bd480000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x210bd480000
+3048  04:44:02 munmap(0x210bd4c0000, 258048) = 0
+3048  04:44:02 mprotect(0x210bd480000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mmap(0x46d76e40000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x46d76e40000
+3048  04:44:02 munmap(0x46d76e80000, 258048) = 0
+3048  04:44:02 mprotect(0x46d76e40000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mmap(0x7c81074c000, 45056, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7c81074c000
+3048  04:44:02 munmap(0x7c810754000, 12288) = 0
+3048  04:44:02 mprotect(0x7c81074c000, 32768, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mmap(0x3700ea9c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x3700ea9c0000
+3048  04:44:02 munmap(0x3700eaa00000, 258048) = 0
+3048  04:44:02 mprotect(0x3700ea9c0000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mprotect(0x25efbedc0000, 262144, PROT_NONE) = 0
+3048  04:44:02 madvise(0x25efbedc0000, 262144, MADV_FREE) = 0
+3048  04:44:02 mprotect(0x25efbedc0000, 4096, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mprotect(0x25efbedc1000, 4096, PROT_NONE) = 0
+3048  04:44:02 madvise(0x25efbedc1000, 4096, MADV_FREE) = 0
+3048  04:44:02 mprotect(0x25efbedc2000, 249856, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mprotect(0x25efbedff000, 4096, PROT_NONE) = 0
+3048  04:44:02 madvise(0x25efbedff000, 4096, MADV_FREE) = 0
+3048  04:44:02 mmap(0x7a05b5c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7a05b5c0000
+3048  04:44:02 munmap(0x7a05b600000, 258048) = 0
+3048  04:44:02 mprotect(0x7a05b5c0000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 brk(0x56385a171000)      = 0x56385a171000
+3048  04:44:02 munmap(0x3700ea9d4000, 180224) = 0
+3048  04:44:02 mprotect(0x25efbede8000, 4096, PROT_NONE) = 0
+3048  04:44:02 madvise(0x25efbede8000, 4096, MADV_FREE) = 0
+3048  04:44:02 mprotect(0x25efbede9000, 94208, PROT_NONE) = 0
+3048  04:44:02 madvise(0x25efbede9000, 94208, MADV_FREE) = 0
+3048  04:44:02 munmap(0x7a05b5c1000, 258048) = 0
+3048  04:44:02 mprotect(0x25efbedc2000, 155648, PROT_READ|PROT_EXEC) = 0
+3048  04:44:02 mmap(0x3d7ab8600000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x3d7ab8600000
+3048  04:44:02 munmap(0x3d7ab8640000, 258048) = 0
+3048  04:44:02 mprotect(0x3d7ab8600000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mmap(0xd8db42c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xd8db42c0000
+3048  04:44:02 munmap(0xd8db4300000, 258048) = 0
+3048  04:44:02 mprotect(0xd8db42c0000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 brk(0x56385a194000)      = 0x56385a194000
+3048  04:44:02 brk(0x56385a190000)      = 0x56385a190000
+3048  04:44:02 brk(0x56385a18d000)      = 0x56385a18d000
+3048  04:44:02 brk(0x56385a185000)      = 0x56385a185000
+3048  04:44:02 brk(0x56385a181000)      = 0x56385a181000
+3048  04:44:02 readlink("/proc/self/exe", "/usr/bin/node", 8191) = 13
+3048  04:44:02 getuid()                 = 1000
+3048  04:44:02 geteuid()                = 1000
+3048  04:44:02 getgid()                 = 1000
+3048  04:44:02 getegid()                = 1000
+3048  04:44:02 futex(0x7fef8f1e9bb8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3048  04:44:02 getpid()                 = 3048
+3048  04:44:02 futex(0x7fef8c86f66c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3048  04:44:02 rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [USR1], 8) = 0
+3048  04:44:02 mmap(NULL, 36864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fef88263000
+3048  04:44:02 mprotect(0x7fef88264000, 32768, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 rt_sigprocmask(SIG_BLOCK, ~[], ~[KILL STOP RTMIN RT_1], 8) = 0
+3048  04:44:02 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7fef8826b910, parent_tid=0x7fef8826b910, exit_signal=0, stack=0x7fef88263000, stack_size=0x7ec0, tls=0x7fef8826b640} => {parent_tid=[3054]}, 88) = 3054
+3054  04:44:02 rseq(0x7fef8826bfe0, 0x20, 0, 0x53053053 <unfinished ...>
+3048  04:44:02 rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+3054  04:44:02 <... rseq resumed>)      = 0
+3048  04:44:02 <... rt_sigprocmask resumed>NULL, 8) = 0
+3054  04:44:02 set_robust_list(0x7fef8826b920, 24 <unfinished ...>
+3048  04:44:02 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+3054  04:44:02 <... set_robust_list resumed>) = 0
+3048  04:44:02 <... rt_sigprocmask resumed>NULL, 8) = 0
+3054  04:44:02 rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+3048  04:44:02 rt_sigaction(SIGUSR1, {sa_handler=0x7fef8d48ad60, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fef8c8ce520},  <unfinished ...>
+3054  04:44:02 <... rt_sigprocmask resumed>NULL, 8) = 0
+3048  04:44:02 <... rt_sigaction resumed>NULL, 8) = 0
+3054  04:44:02 futex(0x7fef8f1eade0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 rt_sigprocmask(SIG_UNBLOCK, [USR1], NULL, 8) = 0
+3048  04:44:02 brk(0x56385a1a3000)      = 0x56385a1a3000
+3048  04:44:02 brk(0x56385a1a1000)      = 0x56385a1a1000
+3048  04:44:02 brk(0x56385a1c8000)      = 0x56385a1c8000
+3048  04:44:02 mmap(0x1a7920b40000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1a7920b40000
+3048  04:44:02 munmap(0x1a7920b80000, 258048) = 0
+3048  04:44:02 mprotect(0x1a7920b40000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 brk(0x56385a1ec000)      = 0x56385a1ec000
+3048  04:44:02 brk(0x56385a1e8000)      = 0x56385a1e8000
+3048  04:44:02 brk(0x56385a1e0000)      = 0x56385a1e0000
+3048  04:44:02 brk(0x56385a1d8000)      = 0x56385a1d8000
+3048  04:44:02 brk(0x56385a1d0000)      = 0x56385a1d0000
+3048  04:44:02 brk(0x56385a1c8000)      = 0x56385a1c8000
+3048  04:44:02 brk(0x56385a1ba000)      = 0x56385a1ba000
+3048  04:44:02 brk(0x56385a1af000)      = 0x56385a1af000
+3048  04:44:02 brk(0x56385a1a5000)      = 0x56385a1a5000
+3048  04:44:02 brk(0x56385a1a1000)      = 0x56385a1a1000
+3048  04:44:02 brk(0x56385a1ce000)      = 0x56385a1ce000
+3048  04:44:02 brk(0x56385a1aa000)      = 0x56385a1aa000
+3048  04:44:02 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3050  04:44:02 <... futex resumed>)     = 0
+3050  04:44:02 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1) = 0
+3050  04:44:02 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fef7b7ff000
+3050  04:44:02 munmap(0x7fef7b7ff000, 8392704) = 0
+3050  04:44:02 munmap(0x7fef80000000, 58716160) = 0
+3050  04:44:02 mprotect(0x7fef7c000000, 135168, PROT_READ|PROT_WRITE) = 0
+3050  04:44:02 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3051  04:44:02 <... futex resumed>)     = 0
+3051  04:44:02 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1) = 0
+3051  04:44:02 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fef74000000
+3051  04:44:02 munmap(0x7fef78000000, 67108864) = 0
+3051  04:44:02 mprotect(0x7fef74000000, 135168, PROT_READ|PROT_WRITE) = 0
+3051  04:44:02 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 brk(0x56385a1cb000)      = 0x56385a1cb000
+3048  04:44:02 brk(0x56385a1c9000)      = 0x56385a1c9000
+3048  04:44:02 brk(0x56385a1ed000)      = 0x56385a1ed000
+3048  04:44:02 brk(0x56385a1e5000)      = 0x56385a1e5000
+3048  04:44:02 brk(0x56385a1e1000)      = 0x56385a1e1000
+3048  04:44:02 brk(0x56385a1d3000)      = 0x56385a1d3000
+3048  04:44:02 brk(0x56385a1c9000)      = 0x56385a1c9000
+3048  04:44:02 brk(0x56385a1be000)      = 0x56385a1be000
+3048  04:44:02 brk(0x56385a1b4000)      = 0x56385a1b4000
+3048  04:44:02 brk(0x56385a1b0000)      = 0x56385a1b0000
+3048  04:44:02 brk(0x56385a1ad000)      = 0x56385a1ad000
+3048  04:44:02 mmap(0x211910740000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x211910740000
+3048  04:44:02 munmap(0x211910780000, 258048) = 0
+3048  04:44:02 mprotect(0x211910740000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mmap(0x19467d600000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x19467d600000
+3048  04:44:02 munmap(0x19467d640000, 258048) = 0
+3048  04:44:02 mprotect(0x19467d600000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mmap(0x1ca38ca00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1ca38ca00000
+3048  04:44:02 munmap(0x1ca38ca40000, 258048) = 0
+3048  04:44:02 mprotect(0x1ca38ca00000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mmap(0x3a99b8780000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x3a99b8780000
+3048  04:44:02 munmap(0x3a99b87c0000, 258048) = 0
+3048  04:44:02 mprotect(0x3a99b8780000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3052  04:44:02 <... futex resumed>)     = 0
+3052  04:44:02 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1) = 0
+3052  04:44:02 mmap(0x7fef78000000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fef78000000
+3052  04:44:02 mprotect(0x7fef78000000, 135168, PROT_READ|PROT_WRITE) = 0
+3052  04:44:02 futex(0x7ffea90c49f8, FUTEX_WAIT_BITSET_PRIVATE, 0, {tv_sec=20136, tv_nsec=583544000}, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 futex(0x7ffea90c49f8, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+3052  04:44:02 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:02 <... futex resumed>)     = 0
+3052  04:44:02 futex(0x7ffea90c4a00, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:02 futex(0x7ffea90c4a00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:02 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:02 <... futex resumed>)     = 0
+3052  04:44:02 futex(0x7ffea90c4a00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:02 futex(0x56385a129730, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3052  04:44:02 <... futex resumed>)     = 0
+3052  04:44:02 futex(0x56385a129730, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:02 <... futex resumed>)     = 0
+3052  04:44:02 <... futex resumed>)     = 1
+3052  04:44:02 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3053  04:44:02 <... futex resumed>)     = 0
+3053  04:44:02 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:02 getpid( <unfinished ...>
+3053  04:44:02 <... futex resumed>)     = 0
+3048  04:44:02 <... getpid resumed>)    = 3048
+3053  04:44:02 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fef6c000000
+3053  04:44:02 munmap(0x7fef70000000, 67108864) = 0
+3053  04:44:02 mprotect(0x7fef6c000000, 135168, PROT_READ|PROT_WRITE) = 0
+3053  04:44:02 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 mprotect(0x25efbee00000, 262144, PROT_NONE) = 0
+3048  04:44:02 madvise(0x25efbee00000, 262144, MADV_FREE) = 0
+3048  04:44:02 mprotect(0x25efbee00000, 4096, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mprotect(0x25efbee01000, 4096, PROT_NONE) = 0
+3048  04:44:02 madvise(0x25efbee01000, 4096, MADV_FREE) = 0
+3048  04:44:02 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mprotect(0x25efbee3f000, 4096, PROT_NONE) = 0
+3048  04:44:02 madvise(0x25efbee3f000, 4096, MADV_FREE) = 0
+3048  04:44:02 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_EXEC) = 0
+3048  04:44:02 brk(0x56385a1ce000)      = 0x56385a1ce000
+3048  04:44:02 brk(0x56385a1f5000)      = 0x56385a1f5000
+3048  04:44:02 brk(0x56385a1ed000)      = 0x56385a1ed000
+3048  04:44:02 brk(0x56385a1e9000)      = 0x56385a1e9000
+3048  04:44:02 brk(0x56385a1e1000)      = 0x56385a1e1000
+3048  04:44:02 brk(0x56385a1d9000)      = 0x56385a1d9000
+3048  04:44:02 brk(0x56385a1ce000)      = 0x56385a1ce000
+3048  04:44:02 brk(0x56385a1c6000)      = 0x56385a1c6000
+3048  04:44:02 brk(0x56385a1c1000)      = 0x56385a1c1000
+3048  04:44:02 mmap(0x1b296480000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1b296480000
+3048  04:44:02 munmap(0x1b2964c0000, 258048) = 0
+3048  04:44:02 mprotect(0x1b296480000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1) = 1
+3050  04:44:02 <... futex resumed>)     = 0
+3050  04:44:02 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1) = 0
+3050  04:44:02 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 brk(0x56385a1e2000)      = 0x56385a1e2000
+3048  04:44:02 brk(0x56385a1e0000)      = 0x56385a1e0000
+3048  04:44:02 brk(0x56385a1d8000)      = 0x56385a1d8000
+3048  04:44:02 brk(0x56385a1ce000)      = 0x56385a1ce000
+3048  04:44:02 brk(0x56385a1ca000)      = 0x56385a1ca000
+3048  04:44:02 brk(0x56385a1c8000)      = 0x56385a1c8000
+3048  04:44:02 brk(0x56385a1ef000)      = 0x56385a1ef000
+3048  04:44:02 brk(0x56385a1e0000)      = 0x56385a1e0000
+3048  04:44:02 brk(0x56385a1d8000)      = 0x56385a1d8000
+3048  04:44:02 brk(0x56385a1d4000)      = 0x56385a1d4000
+3048  04:44:02 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1) = 1
+3051  04:44:02 <... futex resumed>)     = 0
+3051  04:44:02 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1) = 0
+3051  04:44:02 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 brk(0x56385a1f7000)      = 0x56385a1f7000
+3048  04:44:02 brk(0x56385a1ef000)      = 0x56385a1ef000
+3048  04:44:02 brk(0x56385a1e2000)      = 0x56385a1e2000
+3048  04:44:02 brk(0x56385a1d8000)      = 0x56385a1d8000
+3048  04:44:02 brk(0x56385a1d4000)      = 0x56385a1d4000
+3048  04:44:02 brk(0x56385a1f7000)      = 0x56385a1f7000
+3048  04:44:02 brk(0x56385a1f3000)      = 0x56385a1f3000
+3048  04:44:02 brk(0x56385a1eb000)      = 0x56385a1eb000
+3048  04:44:02 brk(0x56385a1e3000)      = 0x56385a1e3000
+3048  04:44:02 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1) = 1
+3052  04:44:02 <... futex resumed>)     = 0
+3052  04:44:02 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1) = 0
+3052  04:44:02 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 getpid()                 = 3048
+3048  04:44:02 getcwd("/home/hussein/node-course-content/13-async-io", 4096) = 46
+3048  04:44:02 brk(0x56385a205000)      = 0x56385a205000
+3048  04:44:02 brk(0x56385a201000)      = 0x56385a201000
+3048  04:44:02 brk(0x56385a1f4000)      = 0x56385a1f4000
+3048  04:44:02 brk(0x56385a1ea000)      = 0x56385a1ea000
+3048  04:44:02 brk(0x56385a1e6000)      = 0x56385a1e6000
+3048  04:44:02 brk(0x56385a20c000)      = 0x56385a20c000
+3048  04:44:02 mmap(0x662dc000000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x662dc000000
+3048  04:44:02 munmap(0x662dc040000, 258048) = 0
+3048  04:44:02 mprotect(0x662dc000000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 brk(0x56385a204000)      = 0x56385a204000
+3048  04:44:02 brk(0x56385a1f9000)      = 0x56385a1f9000
+3048  04:44:02 brk(0x56385a1f0000)      = 0x56385a1f0000
+3048  04:44:02 brk(0x56385a211000)      = 0x56385a211000
+3048  04:44:02 mmap(0x37f11b140000, 393216, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x37f11b140000
+3048  04:44:02 munmap(0x37f11b161000, 258048) = 0
+3048  04:44:02 mprotect(0x37f11b140000, 135168, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 write(16, "\1\0\0\0\0\0\0\0", 8) = 8
+3048  04:44:02 brk(0x56385a206000)      = 0x56385a206000
+3048  04:44:02 brk(0x56385a1fe000)      = 0x56385a1fe000
+3048  04:44:02 brk(0x56385a1f6000)      = 0x56385a1f6000
+3048  04:44:02 mmap(0x15544cb40000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x15544cb40000
+3048  04:44:02 munmap(0x15544cb80000, 258048) = 0
+3048  04:44:02 mprotect(0x15544cb40000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mmap(0x49929300000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x49929300000
+3048  04:44:02 munmap(0x49929340000, 258048) = 0
+3048  04:44:02 mprotect(0x49929300000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1) = 1
+3053  04:44:02 <... futex resumed>)     = 0
+3053  04:44:02 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1) = 0
+3053  04:44:02 mmap(0xa6e78e00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xa6e78e00000
+3053  04:44:02 munmap(0xa6e78e40000, 258048) = 0
+3053  04:44:02 mprotect(0xa6e78e00000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mmap(0x2f72f5940000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2f72f5940000
+3048  04:44:02 munmap(0x2f72f5980000, 258048) = 0
+3048  04:44:02 mprotect(0x2f72f5940000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 futex(0x7ffea90c3698, FUTEX_WAIT_BITSET_PRIVATE, 0, {tv_sec=20136, tv_nsec=613060000}, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3053  04:44:02 futex(0x7ffea90c3698, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+3048  04:44:02 <... futex resumed>)     = 0
+3053  04:44:02 <... futex resumed>)     = 1
+3048  04:44:02 futex(0x7ffea90c36a0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3053  04:44:02 futex(0x7ffea90c36a0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:02 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3053  04:44:02 <... futex resumed>)     = 0
+3048  04:44:02 futex(0x7ffea90c36a0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:02 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 <... futex resumed>)     = 0
+3048  04:44:02 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3050  04:44:02 <... futex resumed>)     = 0
+3050  04:44:02 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:02 getpid( <unfinished ...>
+3050  04:44:02 <... futex resumed>)     = 0
+3048  04:44:02 <... getpid resumed>)    = 3048
+3050  04:44:02 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 brk(0x56385a21c000)      = 0x56385a21c000
+3048  04:44:02 brk(0x56385a214000)      = 0x56385a214000
+3048  04:44:02 brk(0x56385a210000)      = 0x56385a210000
+3048  04:44:02 brk(0x56385a20e000)      = 0x56385a20e000
+3048  04:44:02 getuid()                 = 1000
+3048  04:44:02 geteuid()                = 1000
+3048  04:44:02 getgid()                 = 1000
+3048  04:44:02 getegid()                = 1000
+3048  04:44:02 getuid()                 = 1000
+3048  04:44:02 geteuid()                = 1000
+3048  04:44:02 getgid()                 = 1000
+3048  04:44:02 getegid()                = 1000
+3048  04:44:02 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_EXEC) = 0
+3048  04:44:02 statx(AT_FDCWD, "/home/hussein/node-course-content/13-async-io/131-network-listen.js", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=1019, ...}) = 0
+3048  04:44:02 statx(AT_FDCWD, "/home", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+3048  04:44:02 statx(AT_FDCWD, "/home/hussein", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0750, stx_size=4096, ...}) = 0
+3048  04:44:02 statx(AT_FDCWD, "/home/hussein/node-course-content", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0775, stx_size=4096, ...}) = 0
+3048  04:44:02 statx(AT_FDCWD, "/home/hussein/node-course-content/13-async-io", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0775, stx_size=4096, ...}) = 0
+3048  04:44:02 statx(AT_FDCWD, "/home/hussein/node-course-content/13-async-io/131-network-listen.js", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=1019, ...}) = 0
+3048  04:44:02 openat(AT_FDCWD, "/home/hussein/node-course-content/13-async-io/package.json", O_RDONLY|O_CLOEXEC) = 17
+3048  04:44:02 pread64(17, "{\n  \"name\": \"13-async-io\",\n  \"ve"..., 32768, 0) = 292
+3048  04:44:02 close(17)                = 0
+3048  04:44:02 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_EXEC) = 0
+3048  04:44:02 openat(AT_FDCWD, "/home/hussein/node-course-content/13-async-io/131-network-listen.js", O_RDONLY|O_CLOEXEC) = 17
+3048  04:44:02 statx(17, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=1019, ...}) = 0
+3048  04:44:02 read(17, "const net = require('net');\n \n//"..., 1019) = 1019
+3048  04:44:02 close(17)                = 0
+3048  04:44:02 brk(0x56385a22f000)      = 0x56385a22f000
+3048  04:44:02 brk(0x56385a227000)      = 0x56385a227000
+3048  04:44:02 brk(0x56385a21a000)      = 0x56385a21a000
+3048  04:44:02 brk(0x56385a212000)      = 0x56385a212000
+3048  04:44:02 brk(0x56385a20e000)      = 0x56385a20e000
+3048  04:44:02 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3051  04:44:02 <... futex resumed>)     = 0
+3051  04:44:02 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1) = 0
+3051  04:44:02 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3052  04:44:02 <... futex resumed>)     = 0
+3052  04:44:02 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1) = 0
+3052  04:44:02 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:02 brk(0x56385a230000)      = 0x56385a230000
+3048  04:44:02 brk(0x56385a22c000)      = 0x56385a22c000
+3048  04:44:02 brk(0x56385a22a000)      = 0x56385a22a000
+3048  04:44:02 brk(0x56385a220000)      = 0x56385a220000
+3048  04:44:02 brk(0x56385a21c000)      = 0x56385a21c000
+3048  04:44:02 brk(0x56385a21a000)      = 0x56385a21a000
+3048  04:44:02 brk(0x56385a23c000)      = 0x56385a23c000
+3048  04:44:02 brk(0x56385a233000)      = 0x56385a233000
+3048  04:44:02 brk(0x56385a22b000)      = 0x56385a22b000
+3048  04:44:02 brk(0x56385a221000)      = 0x56385a221000
+3048  04:44:02 brk(0x56385a21d000)      = 0x56385a21d000
+3048  04:44:02 brk(0x56385a21a000)      = 0x56385a21a000
+3048  04:44:02 brk(0x56385a23e000)      = 0x56385a23e000
+3048  04:44:02 brk(0x56385a23a000)      = 0x56385a23a000
+3048  04:44:02 brk(0x56385a22f000)      = 0x56385a22f000
+3048  04:44:02 brk(0x56385a223000)      = 0x56385a223000
+3048  04:44:02 brk(0x56385a21f000)      = 0x56385a21f000
+3048  04:44:02 brk(0x56385a21c000)      = 0x56385a21c000
+3048  04:44:02 openat(AT_FDCWD, "/dev/null", O_RDONLY|O_CLOEXEC) = 17
+3048  04:44:02 socket(AF_INET6, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 18
+3048  04:44:02 setsockopt(18, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+3048  04:44:02 setsockopt(18, SOL_IPV6, IPV6_V6ONLY, [0], 4) = 0
+3048  04:44:02 bind(18, {sa_family=AF_INET6, sin6_port=htons(8080), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "::", &sin6_addr), sin6_scope_id=0}, 28) = 0
+3048  04:44:02 listen(18, 511)          = 0
+3048  04:44:02 ioctl(1, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:02 ioctl(1, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:02 fcntl(1, F_GETFL)        = 0x2 (flags O_RDWR)
+3048  04:44:02 ioctl(1, TIOCGPTN, 0x7ffea90c2e7c) = -1 ENOTTY (Inappropriate ioctl for device)
+3048  04:44:02 ioctl(1, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:02 newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+3048  04:44:02 readlink("/proc/self/fd/1", "/dev/pts/0", 255) = 10
+3048  04:44:02 newfstatat(AT_FDCWD, "/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, 0) = 0
+3048  04:44:02 openat(AT_FDCWD, "/dev/pts/0", O_RDWR|O_NOCTTY|O_CLOEXEC) = 19
+3048  04:44:02 dup3(19, 1, O_CLOEXEC)   = 1
+3048  04:44:02 ioctl(19, FIONBIO, [1])  = 0
+3048  04:44:02 ioctl(19, FIONBIO, [0])  = 0
+3048  04:44:02 ioctl(19, TIOCGWINSZ, {ws_row=54, ws_col=181, ws_xpixel=1270, ws_ypixel=765}) = 0
+3048  04:44:02 rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+3048  04:44:02 read(4, "*", 1)          = 1
+3048  04:44:02 rt_sigaction(SIGWINCH, {sa_handler=0x7fef8c851d40, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fef8c8ce520}, NULL, 8) = 0
+3048  04:44:02 write(5, "*", 1)         = 1
+3048  04:44:02 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+3048  04:44:02 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_WRITE) = 0
+3048  04:44:02 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_EXEC) = 0
+3048  04:44:02 write(19, "server created.\n", 16) = 16
+3048  04:44:02 epoll_ctl(13, EPOLL_CTL_ADD, 14, {events=EPOLLIN, data={u32=14, u64=14}}) = 0
+3048  04:44:02 epoll_ctl(13, EPOLL_CTL_ADD, 16, {events=EPOLLIN, data={u32=16, u64=16}}) = 0
+3048  04:44:02 epoll_ctl(13, EPOLL_CTL_ADD, 18, {events=EPOLLIN, data={u32=18, u64=18}}) = 0
+3048  04:44:02 epoll_wait(13, [{events=EPOLLIN, data={u32=16, u64=16}}], 1024, 0) = 1
+3048  04:44:02 read(16, "\1\0\0\0\0\0\0\0", 1024) = 8
+3048  04:44:02 epoll_wait(13, [], 1024, 0) = 0
+3048  04:44:02 epoll_wait(13, [], 1024, 4988) = 0
+3048  04:44:07 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_WRITE) = 0
+3048  04:44:07 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_EXEC) = 0
+3048  04:44:07 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 20
+3048  04:44:07 connect(20, {sa_family=AF_INET, sin_port=htons(8080), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3048  04:44:07 epoll_ctl(13, EPOLL_CTL_ADD, 20, {events=EPOLLOUT, data={u32=20, u64=20}}) = 0
+3048  04:44:07 epoll_wait(13, [{events=EPOLLIN, data={u32=18, u64=18}}, {events=EPOLLOUT, data={u32=20, u64=20}}], 1024, 0) = 2
+3048  04:44:07 accept4(18, NULL, NULL, SOCK_CLOEXEC|SOCK_NONBLOCK) = 21
+3048  04:44:07 accept4(18, NULL, NULL, SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:07 getsockopt(20, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3048  04:44:07 write(19, "Connected to server at 127.0.0.1"..., 38) = 38
+3048  04:44:07 epoll_ctl(13, EPOLL_CTL_ADD, 21, {events=EPOLLIN, data={u32=21, u64=21}}) = 0
+3048  04:44:07 epoll_ctl(13, EPOLL_CTL_ADD, 20, {events=EPOLLIN, data={u32=20, u64=20}}) = -1 EEXIST (File exists)
+3048  04:44:07 epoll_ctl(13, EPOLL_CTL_MOD, 20, {events=EPOLLIN, data={u32=20, u64=20}}) = 0
+3048  04:44:07 epoll_wait(13, [], 1024, 0) = 0
+3048  04:44:07 epoll_wait(13, [], 1024, 3095) = 0
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e08, FUTEX_WAIT_PRIVATE, 3, NULL <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4e08, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3053  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1) = 1
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... futex resumed>)     = 1
+3050  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3051  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3052  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3052  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a100d78, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 write(16, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... write resumed>)     = 8
+3052  04:44:10 futex(0x56385a100d78, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 epoll_wait(13, [{events=EPOLLIN, data={u32=16, u64=16}}], 1024, 0) = 1
+3048  04:44:10 read(16, "\1\0\0\0\0\0\0\0", 1024) = 8
+3048  04:44:10 futex(0x56385a100d78, FUTEX_WAKE_PRIVATE, 1) = 0
+3048  04:44:10 write(16, "\1\0\0\0\0\0\0\0", 8) = 8
+3048  04:44:10 epoll_wait(13,  <unfinished ...>
+3052  04:44:10 futex(0x7fef8caa6c80, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3052  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:10 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=16, u64=16}}], 1024, 0) = 1
+3050  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:10 read(16, "\1\0\0\0\0\0\0\0", 1024) = 8
+3048  04:44:10 epoll_wait(13, [], 1024, 0) = 0
+3048  04:44:10 epoll_wait(13, [], 1024, 10) = 0
+3048  04:44:10 write(16, "\1\0\0\0\0\0\0\0", 8) = 8
+3048  04:44:10 epoll_wait(13, [{events=EPOLLIN, data={u32=16, u64=16}}], 1024, 0) = 1
+3048  04:44:10 read(16, "\1\0\0\0\0\0\0\0", 1024) = 8
+3048  04:44:10 mmap(0x2b7b4f280000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2b7b4f280000
+3048  04:44:10 munmap(0x2b7b4f2c0000, 258048) = 0
+3048  04:44:10 mprotect(0x2b7b4f280000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mmap(0x83f61580000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x83f61580000
+3048  04:44:10 munmap(0x83f615c0000, 258048) = 0
+3048  04:44:10 mprotect(0x83f61580000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mmap(0x121cf4040000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x121cf4040000
+3048  04:44:10 munmap(0x121cf4080000, 258048) = 0
+3048  04:44:10 mprotect(0x121cf4040000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mmap(0x2389bc140000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2389bc140000
+3048  04:44:10 munmap(0x2389bc180000, 258048) = 0
+3048  04:44:10 mprotect(0x2389bc140000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mmap(0x14c4ae180000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x14c4ae180000
+3048  04:44:10 munmap(0x14c4ae1c0000, 258048) = 0
+3048  04:44:10 mprotect(0x14c4ae180000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mmap(0x186c53f00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x186c53f00000
+3048  04:44:10 munmap(0x186c53f40000, 258048) = 0
+3048  04:44:10 mprotect(0x186c53f00000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mmap(0x26e579f40000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x26e579f40000
+3048  04:44:10 munmap(0x26e579f80000, 258048) = 0
+3048  04:44:10 mprotect(0x26e579f40000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mmap(0x3e9252d00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x3e9252d00000
+3048  04:44:10 munmap(0x3e9252d40000, 258048) = 0
+3048  04:44:10 mprotect(0x3e9252d00000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mprotect(0x25efbedc2000, 155648, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3051  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 madvise(0x3700ea9d0000, 16384, MADV_FREE <unfinished ...>
+3051  04:44:10 madvise(0x2f72f5941000, 40960, MADV_FREE <unfinished ...>
+3048  04:44:10 <... madvise resumed>)   = 0
+3053  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 <... madvise resumed>)   = 0
+3048  04:44:10 madvise(0x1a7920b44000, 8192, MADV_FREE <unfinished ...>
+3051  04:44:10 madvise(0x2f72f595e000, 139264, MADV_FREE <unfinished ...>
+3048  04:44:10 <... madvise resumed>)   = 0
+3051  04:44:10 <... madvise resumed>)   = 0
+3053  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:10 madvise(0x1a7920b4d000, 61440, MADV_FREE) = 0
+3048  04:44:10 madvise(0x1a7920b6b000, 4096, MADV_FREE) = 0
+3048  04:44:10 madvise(0x1a7920b75000, 4096, MADV_FREE <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:10 <... madvise resumed>)   = 0
+3048  04:44:10 madvise(0x1b2964a1000, 4096, MADV_FREE) = 0
+3048  04:44:10 madvise(0x662dc035000, 4096, MADV_FREE) = 0
+3048  04:44:10 madvise(0x3d7ab8622000, 28672, MADV_FREE) = 0
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... futex resumed>)     = 1
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... futex resumed>)     = 1
+3050  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3051  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3051  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = 1
+3048  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = 1
+3052  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3051  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 <... futex resumed>)     = 1
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3051  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3051  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3051  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 write(16, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... write resumed>)     = 8
+3052  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 madvise(0x4992930b000, 24576, MADV_FREE <unfinished ...>
+3051  04:44:10 madvise(0x15544cb41000, 4096, MADV_FREE <unfinished ...>
+3048  04:44:10 mprotect(0x25efbedc2000, 155648, PROT_READ|PROT_EXEC <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... mprotect resumed>)  = 0
+3053  04:44:10 <... madvise resumed>)   = 0
+3052  04:44:10 madvise(0xd8db42c9000, 4096, MADV_FREE <unfinished ...>
+3051  04:44:10 <... madvise resumed>)   = 0
+3050  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:10 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_EXEC <unfinished ...>
+3053  04:44:10 madvise(0x49929314000, 4096, MADV_FREE <unfinished ...>
+3052  04:44:10 <... madvise resumed>)   = 0
+3048  04:44:10 <... mprotect resumed>)  = 0
+3053  04:44:10 <... madvise resumed>)   = 0
+3051  04:44:10 madvise(0x15544cb54000, 180224, MADV_FREE) = 0
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3051  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3050  04:44:10 mprotect(0x2b7b4f280000, 262144, PROT_NONE <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3051  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3050  04:44:10 <... mprotect resumed>)  = 0
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:10 madvise(0x2b7b4f280000, 262144, MADV_FREE <unfinished ...>
+3048  04:44:10 getpid( <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 <... madvise resumed>)   = 0
+3048  04:44:10 <... getpid resumed>)    = 3048
+3053  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 mprotect(0x46d76e40000, 262144, PROT_NONE <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3050  04:44:10 mprotect(0x210bd480000, 262144, PROT_NONE <unfinished ...>
+3048  04:44:10 epoll_wait(13,  <unfinished ...>
+3052  04:44:10 <... mprotect resumed>)  = 0
+3048  04:44:10 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=16, u64=16}}], 1024, 0) = 1
+3053  04:44:10 mprotect(0x319829a80000, 262144, PROT_NONE <unfinished ...>
+3052  04:44:10 madvise(0x46d76e40000, 262144, MADV_FREE <unfinished ...>
+3050  04:44:10 <... mprotect resumed>)  = 0
+3048  04:44:10 read(16,  <unfinished ...>
+3052  04:44:10 <... madvise resumed>)   = 0
+3050  04:44:10 madvise(0x210bd480000, 262144, MADV_FREE <unfinished ...>
+3048  04:44:10 <... read resumed>"\1\0\0\0\0\0\0\0", 1024) = 8
+3053  04:44:10 <... mprotect resumed>)  = 0
+3052  04:44:10 mprotect(0x7e68c600000, 262144, PROT_NONE <unfinished ...>
+3050  04:44:10 <... madvise resumed>)   = 0
+3048  04:44:10 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_WRITE <unfinished ...>
+3053  04:44:10 madvise(0x319829a80000, 262144, MADV_FREE <unfinished ...>
+3052  04:44:10 <... mprotect resumed>)  = 0
+3048  04:44:10 <... mprotect resumed>)  = 0
+3050  04:44:10 mprotect(0x83f61580000, 262144, PROT_NONE <unfinished ...>
+3048  04:44:10 madvise(0x25efbee04000, 241664, MADV_FREE <unfinished ...>
+3052  04:44:10 madvise(0x7e68c600000, 262144, MADV_FREE <unfinished ...>
+3048  04:44:10 <... madvise resumed>)   = 0
+3053  04:44:10 <... madvise resumed>)   = 0
+3050  04:44:10 <... mprotect resumed>)  = 0
+3048  04:44:10 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_EXEC <unfinished ...>
+3053  04:44:10 mprotect(0x121cf4040000, 262144, PROT_NONE <unfinished ...>
+3052  04:44:10 <... madvise resumed>)   = 0
+3050  04:44:10 madvise(0x83f61580000, 262144, MADV_FREE <unfinished ...>
+3048  04:44:10 <... mprotect resumed>)  = 0
+3053  04:44:10 <... mprotect resumed>)  = 0
+3052  04:44:10 mprotect(0x2389bc140000, 262144, PROT_NONE <unfinished ...>
+3050  04:44:10 <... madvise resumed>)   = 0
+3048  04:44:10 write(16, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+3053  04:44:10 madvise(0x121cf4040000, 262144, MADV_FREE <unfinished ...>
+3052  04:44:10 <... mprotect resumed>)  = 0
+3050  04:44:10 mprotect(0x14c4ae180000, 262144, PROT_NONE <unfinished ...>
+3048  04:44:10 <... write resumed>)     = 8
+3053  04:44:10 <... madvise resumed>)   = 0
+3052  04:44:10 madvise(0x2389bc140000, 262144, MADV_FREE <unfinished ...>
+3050  04:44:10 <... mprotect resumed>)  = 0
+3048  04:44:10 epoll_wait(13,  <unfinished ...>
+3053  04:44:10 mprotect(0x186c53f00000, 262144, PROT_NONE <unfinished ...>
+3052  04:44:10 <... madvise resumed>)   = 0
+3050  04:44:10 madvise(0x14c4ae180000, 262144, MADV_FREE <unfinished ...>
+3048  04:44:10 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=16, u64=16}}], 1024, 0) = 1
+3053  04:44:10 <... mprotect resumed>)  = 0
+3052  04:44:10 mprotect(0x26e579f40000, 262144, PROT_NONE <unfinished ...>
+3050  04:44:10 <... madvise resumed>)   = 0
+3048  04:44:10 read(16,  <unfinished ...>
+3053  04:44:10 madvise(0x186c53f00000, 262144, MADV_FREE <unfinished ...>
+3052  04:44:10 <... mprotect resumed>)  = 0
+3048  04:44:10 <... read resumed>"\1\0\0\0\0\0\0\0", 1024) = 8
+3053  04:44:10 <... madvise resumed>)   = 0
+3052  04:44:10 madvise(0x26e579f40000, 262144, MADV_FREE <unfinished ...>
+3050  04:44:10 mprotect(0x3e9252d00000, 262144, PROT_NONE <unfinished ...>
+3048  04:44:10 mprotect(0x25efbedc2000, 155648, PROT_READ|PROT_WRITE <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3052  04:44:10 <... madvise resumed>)   = 0
+3050  04:44:10 <... mprotect resumed>)  = 0
+3048  04:44:10 <... mprotect resumed>)  = 0
+3052  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3050  04:44:10 madvise(0x3e9252d00000, 262144, MADV_FREE) = 0
+3050  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:10 mprotect(0x25efbedc2000, 155648, PROT_READ|PROT_EXEC) = 0
+3048  04:44:10 epoll_wait(13, [], 1024, 0) = 0
+3048  04:44:10 epoll_wait(13, [], 1024, 599) = 0
+3048  04:44:10 write(16, "\1\0\0\0\0\0\0\0", 8) = 8
+3048  04:44:10 epoll_wait(13, [{events=EPOLLIN, data={u32=16, u64=16}}], 1024, 0) = 1
+3048  04:44:10 read(16, "\1\0\0\0\0\0\0\0", 1024) = 8
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3051  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 futex(0x56385a100d78, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3052  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 futex(0x56385a100d78, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 write(16, "\1\0\0\0\0\0\0\0", 8) = 8
+3052  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 epoll_wait(13,  <unfinished ...>
+3051  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 futex(0x56385a100d78, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=16, u64=16}}], 1024, 0) = 1
+3050  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a100d78, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3050  04:44:10 futex(0x56385a100d78, FUTEX_WAKE_PRIVATE, 1) = 0
+3052  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 read(16, "\1\0\0\0\0\0\0\0", 1024) = 8
+3048  04:44:10 epoll_wait(13, [], 1024, 0) = 0
+3048  04:44:10 epoll_wait(13,  <unfinished ...>
+3051  04:44:10 futex(0x56385a100d78, FUTEX_WAKE_PRIVATE, 1) = 0
+3053  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3052  04:44:10 futex(0x56385a100d78, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3050  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:10 <... epoll_wait resumed>[], 1024, 10) = 0
+3048  04:44:10 write(16, "\1\0\0\0\0\0\0\0", 8) = 8
+3048  04:44:10 epoll_wait(13, [{events=EPOLLIN, data={u32=16, u64=16}}], 1024, 0) = 1
+3048  04:44:10 read(16, "\1\0\0\0\0\0\0\0", 1024) = 8
+3048  04:44:10 mprotect(0x3e9252d00000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mprotect(0x26e579f40000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mprotect(0x186c53f00000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mprotect(0x14c4ae180000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mprotect(0x25efbedc2000, 155648, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1) = 1
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3051  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... futex resumed>)     = 1
+3051  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3053  04:44:10 madvise(0x1a7920b59000, 12288, MADV_FREE) = 0
+3051  04:44:10 mmap(0x2882cdf80000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 futex(0x56385a12c4a0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 <... mmap resumed>)      = 0x2882cdf80000
+3048  04:44:10 <... futex resumed>)     = 1
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 munmap(0x2882cdfc0000, 258048 <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a12c4a0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 <... munmap resumed>)    = 0
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 mprotect(0x2882cdf80000, 262144, PROT_READ|PROT_WRITE <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a12c4a0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3051  04:44:10 <... mprotect resumed>)  = 0
+3050  04:44:10 futex(0x56385a12c4a0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3051  04:44:10 futex(0x56385a12c4a0, FUTEX_WAKE_PRIVATE, 1) = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a12c4a0, FUTEX_WAKE_PRIVATE, 1) = 1
+3048  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 mmap(0x2e3dbf9c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3048  04:44:10 futex(0x56385a12c4a0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3053  04:44:10 <... mmap resumed>)      = 0x2e3dbf9c0000
+3053  04:44:10 munmap(0x2e3dbfa00000, 258048) = 0
+3053  04:44:10 mprotect(0x2e3dbf9c0000, 262144, PROT_READ|PROT_WRITE) = 0
+3053  04:44:10 futex(0x56385a12c4a0, FUTEX_WAKE_PRIVATE, 1) = 1
+3052  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a12c4a0, FUTEX_WAKE_PRIVATE, 1) = 1
+3050  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 mmap(0x3252a9900000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3050  04:44:10 futex(0x56385a12c4a0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3052  04:44:10 <... mmap resumed>)      = 0x3252a9900000
+3052  04:44:10 munmap(0x3252a9940000, 258048) = 0
+3052  04:44:10 mprotect(0x3252a9900000, 262144, PROT_READ|PROT_WRITE) = 0
+3052  04:44:10 futex(0x56385a12c4a0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 <... futex resumed>)     = 1
+3048  04:44:10 futex(0x56385a12c4a0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3051  04:44:10 mmap(0x347963c40000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x347963c40000
+3051  04:44:10 munmap(0x347963c80000, 258048) = 0
+3051  04:44:10 mprotect(0x347963c40000, 262144, PROT_READ|PROT_WRITE) = 0
+3051  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3052  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 mmap(0x478ea400000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3050  04:44:10 futex(0x56385a12c4a0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... mmap resumed>)      = 0x478ea400000
+3048  04:44:10 munmap(0x478ea440000, 258048) = 0
+3048  04:44:10 mprotect(0x478ea400000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 futex(0x56385a12c4a0, FUTEX_WAKE_PRIVATE, 1) = 1
+3050  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 futex(0x56385a12c4a0, FUTEX_WAKE_PRIVATE, 1) = 0
+3050  04:44:10 mmap(0x171ec6b80000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x171ec6b80000
+3050  04:44:10 munmap(0x171ec6bc0000, 258048) = 0
+3050  04:44:10 mprotect(0x171ec6b80000, 262144, PROT_READ|PROT_WRITE) = 0
+3048  04:44:10 futex(0x56385a100ad0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3050  04:44:10 futex(0x56385a100ad0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 0
+3050  04:44:10 <... futex resumed>)     = 1
+3050  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1) = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3051  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3052  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3053  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3050  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 <... futex resumed>)     = 1
+3053  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 0
+3051  04:44:10 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3050  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3050  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1) = 0
+3050  04:44:10 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1) = 1
+3052  04:44:10 <... futex resumed>)     = 0
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1) = 1
+3053  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3048  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 0
+3053  04:44:10 <... futex resumed>)     = 0
+3052  04:44:10 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3048  04:44:10 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:10 munmap(0x3d7ab8600000, 262144 <unfinished ...>
+3048  04:44:10 <... futex resumed>)     = 1
+3052  04:44:10 futex(0x56385a0b4dd0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+3051  04:44:10 <... futex resumed>)     = 0
+3048  04:44:11 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3053  04:44:11 <... munmap resumed>)    = 0
+3052  04:44:11 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+3051  04:44:11 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:11 <... futex resumed>)     = 0
+3053  04:44:11 munmap(0x49929300000, 262144 <unfinished ...>
+3052  04:44:11 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:11 <... futex resumed>)     = 0
+3048  04:44:11 futex(0x56385a0b4e20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3052  04:44:11 <... futex resumed>)     = 0
+3053  04:44:11 <... munmap resumed>)    = 0
+3051  04:44:11 munmap(0x662dc000000, 262144 <unfinished ...>
+3048  04:44:11 <... futex resumed>)     = 1
+3050  04:44:11 <... futex resumed>)     = 0
+3053  04:44:11 munmap(0x1b296480000, 262144 <unfinished ...>
+3052  04:44:11 madvise(0x15544cb41000, 4096, MADV_FREE <unfinished ...>
+3048  04:44:11 write(16, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+3050  04:44:11 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3051  04:44:11 <... munmap resumed>)    = 0
+3048  04:44:11 <... write resumed>)     = 8
+3053  04:44:11 <... munmap resumed>)    = 0
+3052  04:44:11 <... madvise resumed>)   = 0
+3050  04:44:11 <... futex resumed>)     = 0
+3048  04:44:11 mprotect(0x25efbedc2000, 155648, PROT_READ|PROT_EXEC <unfinished ...>
+3051  04:44:11 munmap(0x2f72f5940000, 262144 <unfinished ...>
+3053  04:44:11 madvise(0xd8db42c9000, 4096, MADV_FREE <unfinished ...>
+3052  04:44:11 madvise(0x15544cb54000, 180224, MADV_FREE <unfinished ...>
+3050  04:44:11 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:11 <... mprotect resumed>)  = 0
+3053  04:44:11 <... madvise resumed>)   = 0
+3052  04:44:11 <... madvise resumed>)   = 0
+3051  04:44:11 <... munmap resumed>)    = 0
+3048  04:44:11 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_EXEC <unfinished ...>
+3052  04:44:11 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3051  04:44:11 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:11 <... mprotect resumed>)  = 0
+3053  04:44:11 futex(0x56385a0b4e24, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:11 futex(0x56385a0b4e24, FUTEX_WAKE_PRIVATE, 1) = 1
+3050  04:44:11 <... futex resumed>)     = 0
+3048  04:44:11 getpid( <unfinished ...>
+3050  04:44:11 futex(0x56385a0b4dd0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3048  04:44:11 <... getpid resumed>)    = 3048
+3050  04:44:11 <... futex resumed>)     = 0
+3048  04:44:11 epoll_wait(13,  <unfinished ...>
+3050  04:44:11 mprotect(0x3a99b8780000, 262144, PROT_NONE <unfinished ...>
+3048  04:44:11 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=16, u64=16}}], 1024, 0) = 1
+3050  04:44:11 <... mprotect resumed>)  = 0
+3048  04:44:11 read(16, "\1\0\0\0\0\0\0\0", 1024) = 8
+3050  04:44:11 madvise(0x3a99b8780000, 262144, MADV_FREE <unfinished ...>
+3048  04:44:11 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_WRITE) = 0
+3050  04:44:11 <... madvise resumed>)   = 0
+3048  04:44:11 madvise(0x25efbee04000, 241664, MADV_FREE <unfinished ...>
+3050  04:44:11 mprotect(0x1ca38ca00000, 262144, PROT_NONE <unfinished ...>
+3048  04:44:11 <... madvise resumed>)   = 0
+3050  04:44:11 <... mprotect resumed>)  = 0
+3048  04:44:11 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_EXEC <unfinished ...>
+3050  04:44:11 madvise(0x1ca38ca00000, 262144, MADV_FREE <unfinished ...>
+3048  04:44:11 <... mprotect resumed>)  = 0
+3048  04:44:11 write(16, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+3050  04:44:11 <... madvise resumed>)   = 0
+3048  04:44:11 <... write resumed>)     = 8
+3050  04:44:11 mprotect(0x19467d600000, 262144, PROT_NONE <unfinished ...>
+3048  04:44:11 epoll_wait(13,  <unfinished ...>
+3050  04:44:11 <... mprotect resumed>)  = 0
+3048  04:44:11 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=16, u64=16}}], 1024, 0) = 1
+3050  04:44:11 madvise(0x19467d600000, 262144, MADV_FREE <unfinished ...>
+3048  04:44:11 read(16, "\1\0\0\0\0\0\0\0", 1024) = 8
+3050  04:44:11 <... madvise resumed>)   = 0
+3048  04:44:11 mprotect(0x25efbedc2000, 155648, PROT_READ|PROT_WRITE <unfinished ...>
+3050  04:44:11 mprotect(0x211910740000, 262144, PROT_NONE <unfinished ...>
+3048  04:44:11 <... mprotect resumed>)  = 0
+3050  04:44:11 <... mprotect resumed>)  = 0
+3050  04:44:11 madvise(0x211910740000, 262144, MADV_FREE <unfinished ...>
+3048  04:44:11 mprotect(0x25efbedc2000, 155648, PROT_READ|PROT_EXEC <unfinished ...>
+3050  04:44:11 <... madvise resumed>)   = 0
+3048  04:44:11 <... mprotect resumed>)  = 0
+3048  04:44:11 epoll_wait(13,  <unfinished ...>
+3050  04:44:11 futex(0x56385a0b4e20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3048  04:44:11 <... epoll_wait resumed>[], 1024, 0) = 0
+3048  04:44:11 epoll_wait(13, [], 1024, 1216) = 0
+3048  04:44:12 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_WRITE) = 0
+3048  04:44:12 mprotect(0x25efbee02000, 249856, PROT_READ|PROT_EXEC) = 0
+3048  04:44:12 write(19, "read event initiated\n", 21) = 21
+3048  04:44:12 epoll_wait(13, [], 1024, 0) = 0
+3048  04:44:12 epoll_wait(13, 0x7ffea90c35d0, 1024, 9997) = -1 EINTR (Interrupted system call)
+3048  04:44:21 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+3048  04:44:21 newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+3048  04:44:21 fcntl(0, F_GETFL)        = 0x2 (flags O_RDWR)
+3048  04:44:21 rt_sigprocmask(SIG_BLOCK, [TTOU], NULL, 8) = 0
+3048  04:44:21 ioctl(0, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:21 ioctl(0, SNDCTL_TMR_START or TCSETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:21 ioctl(0, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:21 rt_sigprocmask(SIG_UNBLOCK, [TTOU], NULL, 8) = 0
+3048  04:44:21 newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+3048  04:44:21 fcntl(1, F_GETFL)        = 0x8002 (flags O_RDWR|O_LARGEFILE)
+3048  04:44:21 rt_sigprocmask(SIG_BLOCK, [TTOU], NULL, 8) = 0
+3048  04:44:21 ioctl(1, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:21 ioctl(1, SNDCTL_TMR_START or TCSETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:21 ioctl(1, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:21 rt_sigprocmask(SIG_UNBLOCK, [TTOU], NULL, 8) = 0
+3048  04:44:21 newfstatat(2, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+3048  04:44:21 fcntl(2, F_GETFL)        = 0x2 (flags O_RDWR)
+3048  04:44:21 rt_sigprocmask(SIG_BLOCK, [TTOU], NULL, 8) = 0
+3048  04:44:21 ioctl(2, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:21 ioctl(2, SNDCTL_TMR_START or TCSETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:21 ioctl(2, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+3048  04:44:21 rt_sigprocmask(SIG_UNBLOCK, [TTOU], NULL, 8) = 0
+3048  04:44:21 gettid()                 = 3048
+3048  04:44:21 getpid()                 = 3048
+3048  04:44:21 tgkill(3048, 3048, SIGINT) = 0
+3048  04:44:21 rt_sigreturn({mask=[]})  = -1 EINTR (Interrupted system call)
+3048  04:44:21 --- SIGINT {si_signo=SIGINT, si_code=SI_TKILL, si_pid=3048, si_uid=1000} ---
+3053  04:44:21 <... futex resumed>)     = ?
+3051  04:44:21 <... futex resumed>)     = ?
+3050  04:44:21 <... futex resumed>)     = ?
+3049  04:44:21 <... epoll_wait resumed> <unfinished ...>) = ?
+3054  04:44:21 <... futex resumed>)     = ?
+3053  04:44:21 +++ killed by SIGINT +++
+3052  04:44:21 <... futex resumed>)     = ?
+3051  04:44:21 +++ killed by SIGINT +++
+3049  04:44:21 +++ killed by SIGINT +++
+3050  04:44:21 +++ killed by SIGINT +++
+3054  04:44:21 +++ killed by SIGINT +++
+3052  04:44:21 +++ killed by SIGINT +++
+3048  04:44:21 +++ killed by SIGINT +++
