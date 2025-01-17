@@ -14,6 +14,7 @@ const url = new URL("http://example.com")
 for (let i =0; i < 100; i++) {
      //pass the parsed url
      //if you pass the string , we parse it everytime
+    
      const req = http.request(url, {"agent": myAgent, "method": "GET"},
           (res => {
                  //set the encoding
