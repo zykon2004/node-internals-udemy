@@ -1,5 +1,5 @@
 const http = require("node:http");
-const url = new URL("http://example.com")
+const url = new URL("https://example.com")
 const req = http.request(url, {"method": "GET"},
      (res => {
             console.log(res.headers)
