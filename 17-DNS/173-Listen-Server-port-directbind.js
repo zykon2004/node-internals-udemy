@@ -11,5 +11,5 @@
     server.on("connection", (connection) => console.log(`new connection! ${connection.remotePort}` ))
     //if you try to connect before the initial phase completes you will be able to 
     for (let i =0 ;i < 10000000000; i++);
-
+    //telnet 127.0.0.1 8080 will succeed here
     console.log("After initial phase")
