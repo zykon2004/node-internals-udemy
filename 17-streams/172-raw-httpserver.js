@@ -1,10 +1,11 @@
 const http = require("node:http");
-
+//override the highwater mark 
+//default is 64K
 const server = http.createServer({"highWaterMark": 1024} );
-
 server.on("request", (req, res) => {
     //default is 65536
-    console.log("Default highWaterMark" + req.readableHighWaterMark)
+    //https://github.com/nodejs/node/blob/55c42bc6e5602e5a47fb774009cfe9289cb88e71/lib/_stream_readable.js#L45
+    console.log("highWaterMark" + req.readableHighWaterMark)
     //req is a readable stream on the server
     //body is not read by default (can be large)
     req.on("data", data => {
@@ -19,8 +20,6 @@ server.on("request", (req, res) => {
     res.write("hello world" + req.url) 
     res.end();
 })
-
-//send this request
-//curl http://localhost:8080 -X POST -d "key1=value1"
+//send this request curl http://localhost:8080 -X POST -d "key1=value1"
  server.listen(8080, ()=> console.log("Actualy listening.."));
  
