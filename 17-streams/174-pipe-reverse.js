@@ -1,5 +1,5 @@
 //chaining pipes
-//we read, , encrypt,compress write.. 
+//we read, decompress, decrypt and write.. 
 const fs = require('fs');
 const crypto = require('crypto');
 const gzip = require('node:zlib').createGunzip();

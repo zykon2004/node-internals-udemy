@@ -1,8 +1,10 @@
 const http = require("node:http");
 
-const server = http.createServer();
+const server = http.createServer({"highWaterMark": 1024} );
 
 server.on("request", (req, res) => {
+    //default is 65536
+    console.log("Default highWaterMark" + req.readableHighWaterMark)
     //req is a readable stream on the server
     //body is not read by default (can be large)
     req.on("data", data => {
