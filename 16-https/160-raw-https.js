@@ -9,7 +9,8 @@ req.on("response", res => {
             res.on("data", data => console.log("some data" + data))             
      })
 
-req.end();// must call it to actually send the request (end the steream //we will discuss this more on the stream lecture)
+req.end();// must call it to actually send the request 
+// (end the steream //we will discuss this more on the stream lecture)
 let x = req.getHeaders();
 console.log(x)
 

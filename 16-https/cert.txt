@@ -16,11 +16,9 @@
 |                Optional Extensions (X.509 v3)                 |
 |  - Subject Alternative Name                                   |
 |  - Key Usage (e.g., Digital Signature, Key Encipherment)      |
-|  - Extended Key Usage (e.g., TLS server, email protection)    |
 |  - Basic Constraints (e.g., CA=true)                          |
 |  - Authority Key Identifier                                   |
 |  - Subject Key Identifier                                     |
-|  - Others (e.g., CRL Distribution Points)                     |
 +---------------------------------------------------------------+
 |                       Digital Signature                       |
 |  - Signature Algorithm Identifier                             |
