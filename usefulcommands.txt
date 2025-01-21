@@ -1,3 +1,12 @@
+Run tcpdump to know exactly when the packet is being sent (SYN)
+sudo tcpdump -i lo0 port 8888 -v -n
+
+filter on multiple ports  
+sudo tcpdump -i lo0 "port 8888 or port 8080" -v -n
+
+///kill job 
+ps -e | grep fs_usage
+kill -9 48764
 
 //for linux, run a trace to watch all sys calls
 strace -f -t -o out.txt node 050-poll.js 
