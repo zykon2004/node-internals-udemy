@@ -3,6 +3,7 @@ import http from 'node:http';
 import { availableParallelism } from 'node:os';
 import process from 'node:process';
 
+cluster.schedulingPolicy= cluster.SCHED_NONE;
 const numCPUs = availableParallelism();
 
 if (cluster.isPrimary) {
