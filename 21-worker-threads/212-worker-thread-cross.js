@@ -23,7 +23,7 @@ const WorkerThreads = require('node:worker_threads');;
 
   } else {
      
-    //when we listen on the event, the worker remains alive
+    //when we listen on the event on the parent
     WorkerThreads.parentPort.on("message", message => {
         //send a message to the other thread
         console.log("port received on thread " +WorkerThreads.threadId )
