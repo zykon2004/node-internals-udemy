@@ -6,19 +6,32 @@ const WorkerThreads = require('node:worker_threads');;
 
    if (WorkerThreads.isMainThread) {
     //spin a new thread running the same file
-    //pass in data.
-    const threadCount = 4; //try to match the core count
-    const x = {"workerData":  {"from": 1, "to": 100_000_000}} 
+    //pass in data
+    const start = Date.now();
+    const MaxNumber = 100_000_000
+    const os = require("os")
+    
+    const threadCount = 16 //os.availableParallelism; //try to match the core count
+    //use os.availableParallelism
+    //spread MaxNumber on threads 
+    //each thread gets workSlice worth 
+    const workSlice = parseInt(MaxNumber/threadCount)
+    console.log(`Scheduling ${MaxNumber} on ${threadCount} threads slice size: ${workSlice}`)
+    const x = {"workerData":  {"from": -workSlice, "to": 0}} 
     for (let i =0 ; i < threadCount; i++){
-      x.workerData.from += 100_000_000;
-      x.workerData.to += 100_000_000;
+      x.workerData.from += workSlice;
+      x.workerData.to += workSlice;
       const worker = new WorkerThreads.Worker(__filename, x);
       worker.on("message", message => {
          //worker responded with work
          console.log (`Parent: Worker ${worker.threadId} found ${message.primes} primes between ${x.workerData.from} to ${x.workerData.to}.`)
       })
-    }
-    
+    } 
+
+    console.log(`Scheduled ${MaxNumber} work to ${threadCount} threads`)
+    //when all threads quite and there isn't anything to do 
+    //listen to the process exit command and chek how long it takes 
+    process.on("exit", () => console.log (`Processed ${MaxNumber} in ${Date.now() - start} seconds `))
   } else {
       
       //we got work from parent 
