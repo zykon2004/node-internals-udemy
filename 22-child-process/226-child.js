@@ -13,7 +13,7 @@ if (process.env.WORKER) {
   // Create a TCP server
   const server = net.createServer();
 
-  // Listen on the port with SO_REUSEPORT
+  // Listen on the port 
   server.listen(
     {
       port: PORT,

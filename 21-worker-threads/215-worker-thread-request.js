@@ -42,7 +42,6 @@ if (WorkerThreads.isMainThread) {
     })
     worker.on("exit", () => {
         console.log(`thread terminated.`)
-     
     })
 });
  
