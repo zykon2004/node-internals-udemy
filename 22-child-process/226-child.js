@@ -2,6 +2,8 @@ const { fork } = require('child_process');
 const net = require('net');
 const os = require('os');
 
+//fork a process and every connection we get we fork a process and send it to it
+//bad idea.. 
 const PORT = 3000;
 
 if (process.env.WORKER) {
@@ -37,7 +39,7 @@ if (process.env.WORKER) {
   // Fork worker processes
   for (let i = 0; i < numCPUs; i++) {
     const worker = fork(__filename, [], { env: { WORKER: 'true' } });
-
+    worker.send()
     // Handle worker exit and respawn
     worker.on('exit', (code, signal) => {
       console.log(`Worker ${worker.pid} died. Respawning...`);

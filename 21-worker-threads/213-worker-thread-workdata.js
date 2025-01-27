@@ -37,7 +37,7 @@ const WorkerThreads = require('node:worker_threads');;
       //we got work from parent 
       const workerData =WorkerThreads.workerData ;
 
-      console.log (`Worker ${WorkerThreads.threadId}: Started working finding primes between ${workerData.from} to ${workerData.to}... `)
+      console.log (`Worker ${WorkerThreads.threadId} ${process.pid}: Started working finding primes between ${workerData.from} to ${workerData.to}... `)
       const primes = []
       for (let i = workerData.from; i < workerData.to; i++)
            if (isPrime(i)) primes.push(i)
@@ -45,7 +45,6 @@ const WorkerThreads = require('node:worker_threads');;
       //worker done lets tell the parent
       WorkerThreads.parentPort.postMessage ({"primes": primes.length})
       console.log (`Worker ${WorkerThreads.threadId}: Done.`)
-
    } 
 
    function isPrime(num) {

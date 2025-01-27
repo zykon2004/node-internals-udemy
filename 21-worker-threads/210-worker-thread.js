@@ -12,10 +12,8 @@ const WorkerThreads = require('node:worker_threads');;
   } else {
     //child thread gets its own loop
     setTimeout(()=> console.log("Child Timer"), 0)
-
     console.log("Start Thread's initial phase")
     for (let i =0; i< 10000000000;i++);
     console.log("End Thread's initial phase")
     console.log("I'm a worker thread: " + WorkerThreads.threadId)
-
    } 
