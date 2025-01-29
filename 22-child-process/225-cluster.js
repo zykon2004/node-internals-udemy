@@ -3,7 +3,7 @@ const net = require('net');
 const os = require('os');
 
 const PORT = 3000;
-
+//cluster.schedulingPolicy= cluster.SCHED_NONE;
 // Check if the current process is the master process
 if (cluster.isMaster) {
   console.log(`Master process ${process.pid} is running`);
@@ -13,24 +13,24 @@ if (cluster.isMaster) {
   for (let i = 0; i < numCPUs; i++) {
     cluster.fork();
   }
-
-  // Log worker exit and respawn
-  cluster.on('exit', (worker, code, signal) => {
-    console.log(`Worker ${worker.process.pid} died`);
-    cluster.fork(); // Respawn the worker
-  });
+ 
 
 } else {
   console.log(`Worker process ${process.pid} is starting`);
 
-  // Create a TCP server
+  // Create a TCP server on the worker
+  // will communicate with the parent
+  // and ask the parent to listen and gets the socket 
+  // the child gets the socket 
+  //if a socket already exists it is returned.
   const server = net.createServer();
-
-  // Listen on the port with SO_REUSEPORT
+  //the exclusive false means the socket is not exclusive to the worker, but shared ,
+  // node doesn't support SO_REUSEPORT, setting this to true will fail
+  // because each worker will try to listen on the same port..
   server.listen(
     {
       port: PORT,
-      exclusive: false, // This enables SO_REUSEPORT
+      exclusive: false,   
     },
     () => {
       console.log(`Worker ${process.pid} is listening on port ${PORT}`);

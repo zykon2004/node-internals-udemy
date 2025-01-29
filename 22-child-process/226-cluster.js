@@ -24,7 +24,7 @@ if (cluster.isPrimary) {
     res.writeHead(200);
     res.end('hello world\n');
   }).listen(8000)
-  server.on("listening", ()=> console.log( process.pid + " listening.." + JSON.stringify(server))) 
+  server.on("listening", ()=> console.log( process.pid + " listening...")) 
 
   console.log(`Worker ${process.pid} started`);
 }

@@ -37,13 +37,14 @@ if (WorkerThreads.isMainThread) {
 
 } else {
   console.log(`Worker thread ${WorkerThreads.threadId} is starting`);
+
   const fd = WorkerThreads.workerData;
-  console.log(`Got file descriptor ${fd}`);
+  console.log(`Thread ${WorkerThreads.threadId} Got file descriptor ${fd}`);
+  console.log("socket received on thread " + WorkerThreads.threadId )
 
   const socket = new net.Socket({ fd });
   //send a message to the other thread
   socket.write(`Handled by thread ${WorkerThreads.threadId}\n`);
-  console.log("socket received on thread " + WorkerThreads.threadId )
   socket.on("data", data=> console.log(`${WorkerThreads.threadId} got ${data}`))
   //DO NOT CLOSE the socket, main parent still works on it
   //exit the current thread instead.
