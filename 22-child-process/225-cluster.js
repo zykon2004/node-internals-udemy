@@ -3,7 +3,21 @@ const net = require('net');
 const os = require('os');
 
 const PORT = 3000;
-//cluster.schedulingPolicy= cluster.SCHED_NONE;
+
+//cluster.schedulingPolicy= cluster.SCHED_NONE
+//SCHED_NONE will send the socket listner to each worker
+//the workers will call accept on the shared socket listener 
+//it becomes a racing game based on how fast the processes are 
+//unpredicable 
+//SCHED_RR will leave the socket listener on the parent
+//the parent will call accept 
+//the parent then sends accepted connection to a worker based
+//round robin algorithm
+cluster.schedulingPolicy= cluster.SCHED_RR ;
+
+
+
+
 // Check if the current process is the master process
 if (cluster.isMaster) {
   console.log(`Master process ${process.pid} is running`);
