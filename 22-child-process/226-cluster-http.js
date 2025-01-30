@@ -22,9 +22,12 @@ if (cluster.isPrimary) {
   // In this case it is an HTTP server
   const server = http.createServer((req, res) => {
     res.writeHead(200);
-    res.end('hello world\n');
+    res.end(`hello world served by worker ${process.pid}\n`);
   }).listen(8000)
   server.on("listening", ()=> console.log( process.pid + " listening...")) 
 
   console.log(`Worker ${process.pid} started`);
 }
+
+
+//curl http://localhost:8000 to consume

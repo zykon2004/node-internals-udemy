@@ -16,11 +16,9 @@ const PORT = 3000;
 cluster.schedulingPolicy= cluster.SCHED_RR ;
 
 
-
-
 // Check if the current process is the master process
-if (cluster.isMaster) {
-  console.log(`Master process ${process.pid} is running`);
+if (cluster.isPrimary) {
+  console.log(`Primary process ${process.pid} is running`);
 
   // Fork workers based on the number of CPU cores
   const numCPUs = os.cpus().length;
@@ -57,3 +55,4 @@ if (cluster.isMaster) {
     socket.end('Handled by worker ' + process.pid + '\n');
   });
 }
+ 
