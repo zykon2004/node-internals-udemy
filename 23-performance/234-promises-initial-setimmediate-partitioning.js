@@ -10,7 +10,6 @@ process.nextTick( ()=>console.log("---TRUE END OF INITIAL PHASE--First next tick
 console.log("initial phase start...")
 console.log ("Invoking promise then ")
 ExpensivePromise().then(x=>console.log("Got result promise " + x ))
-const { count } = require("console")
 const fs = require("fs")
 fs.readFile ( __filename , ()=> console.log( "IO executed."))
 for (let j =0; j< 1_000_000_000; j++);
@@ -43,7 +42,7 @@ async function ExpensivePromise() {
              }
                 //break it to smaller parts, 
                 //we want to make the blocking as small as possible..
-                
+
              countingIt(1, 1_000_000);
          
              
