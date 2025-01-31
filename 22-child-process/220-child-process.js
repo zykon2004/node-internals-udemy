@@ -12,7 +12,7 @@ const child_process = require('child_process');
 
     //the thread will be created in the poll phase
     setTimeout(()=> console.log("Parent Timer"), 0)
-    console.log("About to start a loop ..")
+    console.log("About to start a loop in parent ..")
 
     for (let i =0; i< 10000000000;i++);
     console.log("End parent initial phase")
@@ -30,10 +30,3 @@ const child_process = require('child_process');
    } 
 
 
-
-
-
-
-if (process.env.WORKER) {
-    //
-}
