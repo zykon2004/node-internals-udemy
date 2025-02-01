@@ -25,7 +25,7 @@ async function ExpensivePromise() {
             console.log("next set immediate executed..")
             console.log("Promise executing....")
             let i =0;
-            for ( i =0; i< 10_000_000_000; i++);
+            for ( i =0; i< 1_000_000_000; i++);
             console.log("Promise resolved.")
             resolve("Counted" + i)
         })
