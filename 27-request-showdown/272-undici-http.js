@@ -1,0 +1,36 @@
+const undici = require('undici');
+
+const myAgent = new undici.Agent({
+     "connections": 10 // set max connections
+});
+
+//sending multiple requests
+console.time("http.request")
+console.time( "http.response")
+const startRSS = process.memoryUsage().rss;
+
+//we can parse the URL once
+const url = new URL("http://example.org")
+const requests = []
+for (let i =0; i < 100; i++) {
+     //pass the parsed url
+     //if you pass the string , we parse it everytime
+    requests.push(sendRequest(url, {"dispatcher": myAgent, "method": "GET"} ))
+}
+ 
+console.log("submitted all requests");
+console.timeEnd ("http.request") 
+let endRSSAllRequests = process.memoryUsage().rss;
+console.log (`Memory used after sending all requests ${(endRSSAllRequests - startRSS).toLocaleString()} bytes`)
+let endRSSAllResponses;
+
+Promise.all(requests).then ( a=> {
+    console.timeEnd( "http.response")
+    endRSSAllResponses= process.memoryUsage().rss;
+    console.log (`Memory used after receiving all responses ${(endRSSAllResponses - startRSS).toLocaleString()} bytes`)
+})
+//take a peek at pending
+ 
+function sendRequest(url, opt) {
+   return undici.request(url, opt);
+}

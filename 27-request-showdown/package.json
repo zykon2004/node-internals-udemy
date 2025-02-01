@@ -1,0 +1,15 @@
+{
+  "name": "27-request-showdown",
+  "version": "1.0.0",
+  "main": "270-request-http.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "undici": "^7.3.0"
+  }
+}
