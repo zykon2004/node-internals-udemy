@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/15-http/150-raw-request.js"
+            "program": "${workspaceFolder}/27-request-showdown/270-request-http.js"
         }
     ]
 }
