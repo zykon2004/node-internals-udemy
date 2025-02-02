@@ -37,7 +37,8 @@ void AddNumbers(const Napi::CallbackInfo& info) {
 
 // Register the function as a Node.js module
 Napi::Object Init(Napi::Env env, Napi::Object exports) {
-    exports.Set(Napi::String::New(env, "addNumbers"), Napi::Function::New(env, AddNumbers));
+    exports.Set(Napi::String::New(env, "addNumbers"), 
+        Napi::Function::New(env, AddNumbers));
     return exports;
 }
 

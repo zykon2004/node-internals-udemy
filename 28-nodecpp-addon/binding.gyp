@@ -5,7 +5,8 @@
       "sources": [ "sum.cpp" ],
       "include_dirs": ["node_modules/node-addon-api"],
       "dependencies": ["node_modules/node-addon-api/node_api.gyp:nothing"],
-      "defines": ["NAPI_DISABLE_CPP_EXCEPTIONS"] 
+      "defines": ["NAPI_DISABLE_CPP_EXCEPTIONS"],
+      "cflags_cc": ["-std=c++17", "-g"]
     }
   ]
 }

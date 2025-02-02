@@ -54,7 +54,7 @@ change package.json install and add Debug
             "type": "cppdbg",
             "request": "launch",
             "program": "/usr/local/bin/node",
-            "args": ["/Users/HusseinNasser/projects/node-course-content/28-isprime.cpp/index.js"],
+            "args": ["/Users/HusseinNasser/projects/node-course-content/28-nodecpp-addon/index.js"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "externalConsole": false,
