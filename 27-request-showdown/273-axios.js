@@ -1,7 +1,9 @@
+const axios = require("axios");
 const http = require("node:http");
-const myAgent = http.Agent({
-     "keepAlive": true, //keep connections alive by sending keep alive messages
-     "maxSockets": 10 // set max connections
+
+const myAgent = new http.Agent({
+    keepAlive: true, // Keep connections alive by sending keep-alive messages
+    maxSockets: 10, // Set max connections
 });
 
 const requestCount = 100;
@@ -31,6 +33,7 @@ stats.request.time = endRequest - startRequest
 console.log (`Memory used after sending all requests ${stats.request.mem} bytes`)
 let endRSSAllResponses;
 let endResponse;
+
 Promise.all(requests).then ( a=> {
     console.timeEnd( "http.response")
     endRSSAllResponses= process.memoryUsage().rss;
@@ -42,16 +45,11 @@ Promise.all(requests).then ( a=> {
 })
 //take a peek at pending
 
-function sendRequest(url, opt) {
-    return new Promise( (resolve, reject) => {
-        const req = http.request(url, opt,
-            (res => {
-                   //set the encoding
-                   res.setEncoding('utf-8')
-                   res.on("data", data => resolve(data))      
-                   res.on("error", err=> reject(err))       
-            }));
-        
-       req.end();// must call it to actually send the request 
+// Function to send requests using Axios
+function sendRequest(url, options) {
+    return axios({
+        url,
+        method: options.method,
+        httpAgent: options.httpAgent, // Attach the custom HTTP agent
     })
 }

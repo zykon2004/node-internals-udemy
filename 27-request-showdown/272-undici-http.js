@@ -4,30 +4,42 @@ const myAgent = new undici.Agent({
      "connections": 10 // set max connections
 });
 
+const requestCount = 100;
+const stats = {"request": { "time": 0, "mem": 0}, "response": { "time": 0, "mem": 0}}
+const startRequest = Date.now()
 //sending multiple requests
 console.time("http.request")
 console.time( "http.response")
+ 
 const startRSS = process.memoryUsage().rss;
 
 //we can parse the URL once
 const url = new URL("http://example.org")
 const requests = []
-for (let i =0; i < 100; i++) {
+for (let i =0; i < requestCount; i++) {
      //pass the parsed url
      //if you pass the string , we parse it everytime
     requests.push(sendRequest(url, {"dispatcher": myAgent, "method": "GET"} ))
 }
  
 console.log("submitted all requests");
-console.timeEnd ("http.request") 
+console.timeEnd ("http.request")
 let endRSSAllRequests = process.memoryUsage().rss;
-console.log (`Memory used after sending all requests ${(endRSSAllRequests - startRSS).toLocaleString()} bytes`)
+let endRequest = Date.now() 
+stats.request.mem = (endRSSAllRequests - startRSS).toLocaleString()
+stats.request.time = endRequest - startRequest 
+console.log (`Memory used after sending all requests ${stats.request.mem} bytes`)
 let endRSSAllResponses;
+let endResponse;
 
 Promise.all(requests).then ( a=> {
     console.timeEnd( "http.response")
     endRSSAllResponses= process.memoryUsage().rss;
+    endResponse = Date.now();
+    stats.response.mem = (endRSSAllResponses - startRSS).toLocaleString()
+    stats.response.time = endResponse - startRequest;
     console.log (`Memory used after receiving all responses ${(endRSSAllResponses - startRSS).toLocaleString()} bytes`)
+    console.table(stats)
 })
 //take a peek at pending
  
