@@ -7,7 +7,7 @@ const myAgent = new http.Agent({
 });
 
 const requestCount = 100;
-const stats = {"request": { "time": 0, "mem": 0}, "response": { "time": 0, "mem": 0}}
+const stats = {"axios":  {"reqtime": 0, "reqmem": 0, "restime": 0, "reqmem": 0}}
 const startRequest = Date.now()
 //sending multiple requests
 console.time("http.request")
@@ -28,21 +28,21 @@ console.log("submitted all requests");
 console.timeEnd ("http.request")
 let endRSSAllRequests = process.memoryUsage().rss;
 let endRequest = Date.now() 
-stats.request.mem = (endRSSAllRequests - startRSS).toLocaleString()
-stats.request.time = endRequest - startRequest 
-console.log (`Memory used after sending all requests ${stats.request.mem} bytes`)
+stats[Object.keys(stats)[0]].reqmem = (endRSSAllRequests - startRSS).toLocaleString()
+stats[Object.keys(stats)[0]].reqtime = endRequest - startRequest 
+console.log (`Memory used after sending all requests ${endRequest - startRequest} bytes`)
 let endRSSAllResponses;
 let endResponse;
-
 Promise.all(requests).then ( a=> {
     console.timeEnd( "http.response")
     endRSSAllResponses= process.memoryUsage().rss;
     endResponse = Date.now();
-    stats.response.mem = (endRSSAllResponses - startRSS).toLocaleString()
-    stats.response.time = endResponse - startRequest;
+    stats[Object.keys(stats)[0]].resmem = (endRSSAllResponses - startRSS).toLocaleString()
+    stats[Object.keys(stats)[0]].restime = endResponse - startRequest;
     console.log (`Memory used after receiving all responses ${(endRSSAllResponses - startRSS).toLocaleString()} bytes`)
     console.table(stats)
 })
+//take a peek at pending
 //take a peek at pending
 
 // Function to send requests using Axios
