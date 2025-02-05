@@ -1,4 +1,5 @@
-require ("/Users/HusseinNasser/projects/node-course-content/01-main-module/010-b.js")
+//. means from the point of the current __filename
+require ("./b.js") 
 console.log("loading module a")
 
 for (let i = 0; i < 100000000; i ++);
