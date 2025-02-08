@@ -1,3 +1,8 @@
+Install node
+cd ~
+curl -sL https://deb.nodesource.com/setup_20.x -o /tmp/nodesource_setup.sh
+sudo bash /tmp/nodesource_setup.sh
+
 Run tcpdump to know exactly when the packet is being sent (SYN)
 sudo tcpdump -i lo0 port 8888 -v -n
 
