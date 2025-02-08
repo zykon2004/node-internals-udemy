@@ -31,6 +31,7 @@ server.on('error', (err) => {
     console.error('Server error:', err);
 });
 
+setTimeout( ()=> server.close(), 10000); 
 
 function test(){
 console.log(Date.now() + "test");
@@ -39,5 +40,5 @@ console.log(Date.now() + "test");
 
 //test();
 console.log("start")
-for (let i = 0; i < 10000000000; i++);
+//for (let i = 0; i < 10000000000; i++);
 console.log("end")
