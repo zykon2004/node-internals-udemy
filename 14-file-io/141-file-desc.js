@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const fd = fs.openSync(__filename, 'r')
 console.log("file descriptor " + fd)
-console.log(fs.readFileSync(fd, 'utf-8'))
+console.log(fs.readFileSync(fd, 'utf-8').length)
 fs.closeSync(fd);
 
 /*

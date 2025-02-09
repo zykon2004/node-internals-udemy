@@ -1,3 +1,10 @@
+//we run this code with this command
+
+//strace -e trace=epoll_ctl -f -o test.txt node 04-idle-prepare/040-idleprepare.js
+//this will run an strace (linux) and will listen to epoll_ctl system calls
+//these are specifcally called to setup new file desctriptors to prepare 
+//for the poll phase 
+
 const net = require('net');
 
 // Create a server object
