@@ -1,4 +1,4 @@
 start from scratch
 do npm init -y --this creates package.json
 npm view node-fetch
-npm install node-fetch@3.3.1  --this creates package-lock.json and node_modules
+npm install node-fetch@3.3.1  --this creates package-lock.json and node_modules, installs 3.3.1 specific, say 3.3.2 is buggy

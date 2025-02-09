@@ -1,15 +1,15 @@
 {
-  "name": "test",
+  "name": "11-package.json",
   "version": "1.0.0",
   "main": "110-index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "fetch": "^1.1.0",
-    "lodash": "^4.17.21"
+    "node-fetch": "^3.3.1"
   }
 }
