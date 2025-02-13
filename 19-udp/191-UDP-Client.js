@@ -5,6 +5,9 @@ client.on('message', (msg, rinfo) => {
   console.log(`client got: ${msg} from ${rinfo.address}:${rinfo.port}`);
 });
 
+//optional but we can bind to a random port of our choice
+client.bind(55555);
+
 client.connect( 3333,"127.0.0.1", () => {
   console.log ("server exists .. send something.. ")
   //notice that its called send and not write 

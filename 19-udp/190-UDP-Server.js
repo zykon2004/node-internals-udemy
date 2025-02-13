@@ -11,5 +11,5 @@ server.on('listening', () => {
   console.log(`server listening ${address.address}:${address.port}`);
 });
 
-server.bind(41234);
-// Prints: server listening 0.0.0.0:41234
+server.bind(3333);
+// Prints: server listening 0.0.0.0:3333
