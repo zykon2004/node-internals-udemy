@@ -10,4 +10,4 @@ setTimeout(timerCallback, 300, '300 ms', 300);
 
 //the initial phase sync execute this code (which takes ~380 ms), waits for it to finish
 //then goes to the timer phase and noticed all timers are ready, so it executes the 4 callbacks at once
-for (let i = 1; i <= 100000000; i++);
+for (let i = 1; i <= 1_000_000_000; i++);

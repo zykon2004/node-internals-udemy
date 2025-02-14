@@ -1,4 +1,4 @@
-import fs from "node:fs"
+const fs = require("fs")
 const x = 1;
 const y = 2;
 const z = x + y;
@@ -10,9 +10,10 @@ function writeFileBCallback() {
         console.log("write b.txt");
         setTimeout( timer2Callback,1000);
 }
-function readFileACallback() {
+function readFileACallback(err, data ) {
         //writeFile b
-        console.log("read a.txt");
+        if (err) console.error(err)
+        console.log("read a.txt" + data);
         fs.writeFile("b.txt", "test", writeFileBCallback);
 }
 fs.readFile ("a.txt", readFileACallback);
