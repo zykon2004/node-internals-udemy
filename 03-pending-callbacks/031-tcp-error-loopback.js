@@ -53,3 +53,4 @@ for (let i = 1; i <= 500000000; i++);
 //after the loop ends and initial phase is done, we enter the poll phase and actually read the file (no callbacks ready)
 console.log(`END`);
 
+setTimeout(()=>console.log("timer!"), 0)

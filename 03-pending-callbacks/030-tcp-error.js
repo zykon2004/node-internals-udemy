@@ -47,9 +47,11 @@ clientSuccess.on('error', (err) => {
     console.error(`Connection error: ${err.message}`);
 });
 
+
  
 //slow down the initial phase
 for (let i = 1; i <= 500000000; i++);
 //after the loop ends and initial phase is done, we enter the poll phase and actually read the file (no callbacks ready)
+setTimeout(()=>console.log("timer!"), 0)
 console.log(`END`);
 
