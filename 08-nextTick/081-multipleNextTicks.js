@@ -23,6 +23,8 @@ fs.readFile(__filename, () => {
     console.log("read file.")
   setImmediate(() => {
     console.log('immediate');
+    process.nextTick( ()=>console.log("nextTick after check phase")) 
+
   });
   process.nextTick( ()=>console.log("nextTick after poll phase")) 
 

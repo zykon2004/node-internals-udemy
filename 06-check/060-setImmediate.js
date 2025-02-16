@@ -6,7 +6,7 @@ console.log(`START`);
 const readFileCallback = (err, data) => {
   console.log(`readFileCallback ${data}`);
 };
-const f = 'test1.txt'
+const f = 'test123.txt'
 //in the intial phase this file will only be opened (not read)
 //if it fails we immediately know, we add a callback in the poll queue with failure.
 fs.readFile(f, readFileCallback);
