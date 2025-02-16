@@ -6,7 +6,7 @@ function test () {
 //the output is undefined
 //if we call it through nextTick
 //the output is 1
-//process.nextTick( test)
+process.nextTick( test)
 //test()
 //setTimeout( test, 0)
 val = 1;

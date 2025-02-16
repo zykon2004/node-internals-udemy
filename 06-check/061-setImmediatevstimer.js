@@ -6,6 +6,7 @@
 setTimeout(() => {
     console.log('timeout');
   }, 0);
-  setImmediate(() => {
+
+setImmediate(() => {
     console.log('immediate');
   });
