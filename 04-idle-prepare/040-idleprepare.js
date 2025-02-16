@@ -38,7 +38,7 @@ server.on('error', (err) => {
     console.error('Server error:', err);
 });
 
-setTimeout( ()=> server.close(), 10000); 
+setTimeout( ()=> server.close(), 30000); 
 
 function test(){
 console.log(Date.now() + "test");

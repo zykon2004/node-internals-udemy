@@ -10,7 +10,7 @@ console.log("start")
 // the moment you add a host parameter, node need to resolve it 
 //which takes time so this happens during hte event loop (poll phase)
 const server = net.createServer(() => {}).listen(8080);
-for (let i =0; i < 100000000000000; i++);
+for (let i =0; i < 10000000; i++);
 
 server.on('listening', () => console.log("listening.."));
 
