@@ -11,7 +11,7 @@ clientSuccess.connect(80, '93.184.215.14', () => {
     console.log(`Connected to server at ${'93.184.215.14'}:${80}`);
 });
 //destroy the connection after 10 seconds, 
-setTimeout( ()=> clientSuccess.destroy(), 10000); 
+//setTimeout( ()=> clientSuccess.destroy(), 10000); 
 // Handle close events
 clientSuccess.on('close', () => {
     console.error(`Connection closed.`);

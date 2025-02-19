@@ -1,6 +1,7 @@
 const fs = require("fs");
 
-const p = '/Users/HusseinNasser/Desktop/udemy/backendcourse/Outline.mp4'
+//fallocate -l 1G large.file 
+const p = '/home/hussein/large.file' //'/Users/HusseinNasser/Desktop/udemy/backendcourse/Outline.mp4'
 
 const stream = fs.createReadStream(p);
 

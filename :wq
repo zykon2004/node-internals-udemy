@@ -17,7 +17,7 @@ but poll phase didn’t picked it up
 //run with UV_THREADPOOL_SIZE=1 node 14-file-io/142-file-max.js 
 //then run with UV_THREADPOOL_SIZE=8 node 14-file-io/142-file-max.js  
 
-console.log ("Start reading with " + process.env.UV_THREADPOOL_SIZE + " threads")
+console.log ("Start reading...")
 const promises = []
 for (let i =0;i < 4;i ++)
     promises.push(issueRead(p2));

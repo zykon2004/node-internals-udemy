@@ -5,7 +5,7 @@ console.log("start")
 //to accept new connections, this happens while the socket
 //is alive
 const server = net.createServer(() => {}).listen(8080);
-setTimeout( ()=> server.close(), 4000); 
+//setTimeout( ()=> server.close(), 4000); 
 
 server.on('listening', () => console.log("listening.."));
 
