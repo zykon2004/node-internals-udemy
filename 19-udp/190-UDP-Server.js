@@ -18,6 +18,6 @@ server.on('listening', () => {
 
 server.bind(3333); 
 //use this to send a sample udp message
-echo "Hello UDP" | nc -u 127.0.0.1 3333
+//echo "Hello UDP" | nc -u 127.0.0.1 3333
 
 // Prints: server listening 0.0.0.0:3333
