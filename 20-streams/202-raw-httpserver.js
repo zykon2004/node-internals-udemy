@@ -4,9 +4,9 @@ const http = require("node:http");
 //run with default, send this request
 // head -c 10240000 /dev/zero | curl -X POST --data-binary http://192.168.7.179:8080
 //then run with the overriden hwm
-//const server = http.createServer({"highWaterMark": 300_000} );
+const server = http.createServer({"highWaterMark": 300_000} );
 
-const server = http.createServer( );
+//const server = http.createServer( );
 
 server.on("request", (req, res) => {
     //default is 65536
@@ -16,12 +16,11 @@ server.on("request", (req, res) => {
     //body is not read by default (can be large)
    req.on("readable", () => {
           function readChunk() {
-
-          //delay reading so we fill up the stream buffer.
-	  let chunk = req.read(); 
-	  if (chunk == null) return;
-	   console.log("reading..." + chunk.toString().length);
-	  } 
+            //delay reading so we fill up the stream buffer.
+            let chunk = req.read(); 
+            if (chunk == null) return;
+            console.log("reading..." + chunk.toString().length);
+           } 
          //read every second so the _read is called
 	 setTimeout(readChunk, 1000);
 	  
