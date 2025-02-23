@@ -4,7 +4,7 @@ const http = require("node:http");
 //run with default, send this request
 // head -c 10240000 /dev/zero | curl -X POST --data-binary http://192.168.7.179:8080
 //then run with the overriden hwm
-const server = http.createServer({"highWaterMark": 300_000} );
+const server = http.createServer({"highWaterMark": 200_000} );
 
 //const server = http.createServer( );
 

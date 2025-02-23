@@ -27,18 +27,18 @@ const child_process = require('child_process');
     process.on("message", message => console.log(`Received message from parent '${message}'`))
 
     process.send("hey dad")
-    console.log("Start Thread's initial phase")
+    console.log("Start Process's initial phase")
     console.log("I'm a worker process: " + process.pid)
     
     for (let i =0; i< 100000000;i++);
-    console.log("End Thread's initial phase")
+    console.log("End Process's initial phase")
     process.on("exit", ()=>console.log("Child exit"))
     
     setTimeout(()=> {
       console.log("Child Timer")
       //exit process
       //once we exit process is free to leave
-      process.exit(0);
+      //process.exit(0);
     }, 3000)
 
 

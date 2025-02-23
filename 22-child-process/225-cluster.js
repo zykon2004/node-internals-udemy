@@ -13,7 +13,7 @@ const PORT = 3000;
 //the parent will call accept 
 //the parent then sends accepted connection to a worker based
 //round robin algorithm
-cluster.schedulingPolicy= cluster.SCHED_RR ;
+cluster.schedulingPolicy= cluster.SCHED_NONE ;
 
 
 // Check if the current process is the master process

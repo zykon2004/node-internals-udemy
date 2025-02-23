@@ -11,7 +11,7 @@ const WorkerThreads = require('node:worker_threads');;
     const MaxNumber = 100_000_000
     const os = require("os")
     
-    const threadCount = 16 //os.availableParallelism; //try to match the core count
+    const threadCount = 2 //os.availableParallelism; //try to match the core count
     //use os.availableParallelism
     //spread MaxNumber on threads 
     //each thread gets workSlice worth 

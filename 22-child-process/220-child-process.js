@@ -18,13 +18,13 @@ const child_process = require('child_process');
     console.log("End parent initial phase")
     process.on("exit", ()=>console.log("Parent exit"))
   } else {
-    //child thread gets its own loop
+    //child Process gets its own loop
     setTimeout(()=> console.log("Child Timer"), 0)
-    console.log("Start Thread's initial phase")
+    console.log("Start Process's initial phase")
     console.log("I'm a worker process: " + process.pid)
 
     for (let i =0; i< 10000000000;i++);
-    console.log("End Thread's initial phase")
+    console.log("End Process's initial phase")
     process.on("exit", ()=>console.log("Child exit"))
 
    } 

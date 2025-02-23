@@ -10,8 +10,7 @@ if (WorkerThreads.isMainThread) {
  
   // Create a TCP server on the parent
   const server = net.createServer();  
-
-   // Listen on the port with SO_REUSEPORT
+ 
    server.listen({ port: PORT},
     () => {
       console.log(`parent process ${process.pid} is listening on port ${PORT}`);
