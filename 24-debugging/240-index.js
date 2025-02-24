@@ -1,20 +1,15 @@
-//next tick happens after initial phase,
-//a nice way to know when does next tick starts is when the initial phase done
-process.nextTick( ()=>console.log("TRUE END OF INITIAL PHASE--First next tick! "))
+const http = require("node:http");
+const req = http.request("http://example.com",  { "method": "GET"});
 
-console.time('require Time');
-require('fetch');  
-console.timeEnd('require Time');
+req.on("response", res => {
+            console.log(res.headers)
+            console.log(res.statusCode);
+            //set the encoding
+            res.setEncoding('utf-8')
+            res.on("data", data => console.log("some data" + data))             
+     })
 
-console.time('Import Time');
-import('fetch');  
-console.timeEnd('Import Time');
+req.end();// must call it to actually send the request (end the steream //we will discuss this more on the stream lecture)
+let x = req.getHeaders();
+console.log(x)
 
-console.log("initial phase start...") 
-for ( i =0; i< 1000000000; i++);
-process.nextTick( ()=>console.log("next tick1"))
-process.nextTick( ()=>console.log("next tick2"))
-process.nextTick( ()=>console.log("next tick3"))
-for ( i =0; i< 100000000000000; i++);
-console.log("end initial...") 
- 

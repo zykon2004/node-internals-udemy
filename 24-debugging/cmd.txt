@@ -1,3 +1,9 @@
-$ node --inspect-brk 230-nextticks.js 
+$ node --inspect-brk 240-index.js 
+
+open chrome 
+
+go to 
+
+chrome://inspect/
 
 Debugger listening on ws://127.0.0.1:9229/485b8dd0-e8ae-404b-8049-2da3a136e94b
