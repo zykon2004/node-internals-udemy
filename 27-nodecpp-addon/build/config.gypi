@@ -449,7 +449,7 @@
     "python": "/opt/homebrew/opt/python@3.13/bin/python3.13",
     "standalone_static_library": 1,
     "global_prefix": "/usr/local",
-    "local_prefix": "/Users/HusseinNasser/projects/node-course-content/28-nodecpp-addon",
+    "local_prefix": "/Users/HusseinNasser/projects/node-course-content/27-nodecpp-addon",
     "globalconfig": "/usr/local/etc/npmrc",
     "userconfig": "/Users/HusseinNasser/.npmrc",
     "init_module": "/Users/HusseinNasser/.npm-init.js",

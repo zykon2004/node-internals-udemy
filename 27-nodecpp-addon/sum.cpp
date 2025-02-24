@@ -1,4 +1,4 @@
-#include <napi.h>
+#include "node_modules/node-addon-api/napi.h"
 
 // Function that adds two numbers and returns the result via a callback
 void AddNumbers(const Napi::CallbackInfo& info) {
@@ -9,6 +9,7 @@ void AddNumbers(const Napi::CallbackInfo& info) {
     Napi::Object console = global.Get("console").As<Napi::Object>();
 
     // Get `log` function from `console`
+    //console.log
     Napi::Function log = console.Get("log").As<Napi::Function>();
 
     // Call `console.log("Hello from C++ addon!")`

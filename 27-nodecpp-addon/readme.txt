@@ -37,10 +37,15 @@ npm install will run the build
 
 npm install  
 
+
+//to remove the .cpp errors, copy the c_cpp_properties.json to .vscode
+//this tells vscode where to find NAPI 
+
+
 //to Debug 
 
 change package.json install and add Debug
-
+//change your paths
 , add launcher .json 
 
 {
@@ -54,7 +59,7 @@ change package.json install and add Debug
             "type": "cppdbg",
             "request": "launch",
             "program": "/usr/local/bin/node",
-            "args": ["/Users/HusseinNasser/projects/node-course-content/28-nodecpp-addon/index.js"],
+            "args": ["/Users/HusseinNasser/projects/node-course-content/27-nodecpp-addon/index.js"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "externalConsole": false,
@@ -65,3 +70,27 @@ change package.json install and add Debug
           }
     ]
 }
+
+
+
+package.json should have node-gyp rebuild --debug or --release which builds 
+
+{
+  "name": "28-isprime.cpp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "gypfile": true,
+  "description": "",
+  "dependencies": {
+    "node-addon-api": "^8.3.0",
+    "node-gyp": "^11.0.0"
+  }
+}
+

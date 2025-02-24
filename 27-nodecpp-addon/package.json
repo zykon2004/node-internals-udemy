@@ -1,5 +1,5 @@
 {
-  "name": "28-isprime.cpp",
+  "name": "27-nodecpp-addon",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   "gypfile": true,
   "description": "",
   "dependencies": {
-    "node-addon-api": "^8.3.0",
-    "node-gyp": "^11.0.0"
+    "node-addon-api": "^8.3.1",
+    "node-gyp": "^11.1.0"
   }
 }

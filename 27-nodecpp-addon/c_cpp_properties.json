@@ -1,0 +1,22 @@
+{
+    "configurations": [
+      {
+        "name": "Mac",
+        "includePath": [
+          "/Users/HusseinNasser/projects/node-course-content/27-nodecpp-addon/node_modules/**",
+          "/Users/HusseinNasser/projects/node-course-content/27-nodecpp-addon/node_modules/node-addon-api",
+          "/Users/HusseinNasser/projects/node-course-content/27-nodecpp-addon/node_modules/node-addon-api/include",
+          "/Users/HusseinNasser/projects/node-course-content/27-nodecpp-addon/node_modules/node_modules/node-addon-api/napi.h",
+          "/usr/local/include/node", // Node.js headers (macOS/Linux)
+          "/usr/include/node",       // Alternative Node.js include path
+          "C:/Program Files/nodejs/include/node" // Windows (if applicable)
+        ],
+        "defines": [],
+        "compilerPath": "/usr/bin/clang++",
+        "cStandard": "c11",
+        "cppStandard": "c++17",
+        "intelliSenseMode": "macos-clang-x64"
+      }
+    ],
+    "version": 4
+  }
