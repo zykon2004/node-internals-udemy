@@ -5,7 +5,8 @@
 //this is useful for sockets to establish connections /listening sockets early
 //at least people can connect now ! 
 //and we get the io whenver we get it as soon as possible
-
+console.time("IP")
+process.nextTick( () => console.timeEnd("IP"));
 process.nextTick( ()=>console.log("---TRUE END OF INITIAL PHASE--First next tick! "))
 console.log("initial phase start...")
 console.log ("Invoking promise then ")

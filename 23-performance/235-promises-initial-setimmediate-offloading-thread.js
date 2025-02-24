@@ -5,7 +5,8 @@
 //this is useful for sockets to establish connections /listening sockets early
 //at least people can connect now ! 
 //and we get the io whenver we get it as soon as possible
-
+console.time("IP")
+process.nextTick( () => console.timeEnd("IP"));
 const WorkerThreads = require('node:worker_threads');;
 //this tells us whether we are on the main thread or worker
   if (WorkerThreads.isMainThread) {

@@ -3,6 +3,8 @@
 //promise was resolved in the next tick.. 
 //we are still blocking io.. (io executed last)
 //if this was a listening socket no body can connect for a while
+console.time("IP")
+process.nextTick( () => console.timeEnd("IP"));
 process.nextTick( ()=>console.log("TRUE END OF INITIAL PHASE--First next tick! "))
 console.log("initial phase start...")
 console.log ("Invoking promise then ")

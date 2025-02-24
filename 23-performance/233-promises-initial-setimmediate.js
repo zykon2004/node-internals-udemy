@@ -1,3 +1,6 @@
+
+
+
 //here we differed the execution of the promise
 //to the check phase (offloading the initial phase and allowing loop to start)
 //promise was resolved in the next tick after check.. 
@@ -6,6 +9,8 @@
 //this is useful for sockets to establish connections /listening sockets early
 //at least people can connect now ! 
 //But the io callback got kicked later
+console.time("IP")
+process.nextTick( () => console.timeEnd("IP"));
 process.nextTick( ()=>console.log("---TRUE END OF INITIAL PHASE--First next tick! "))
 console.log("initial phase start...")
 console.log ("Invoking promise then ")
