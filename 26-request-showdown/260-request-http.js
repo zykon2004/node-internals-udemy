@@ -5,7 +5,7 @@ const myAgent = http.Agent({
 });
 
 const requestCount = 100;
-const stats = {"http":  {"reqtime": 0, "reqmem": 0, "restime": 0, "reqmem": 0}}
+const stats = {"http":  {"reqtime": 0, "reqmem": 0, "restime": 0, "resmem": 0}}
 const startRequest = Date.now()
 //sending multiple requests
 console.time("http.request")
@@ -22,13 +22,13 @@ for (let i =0; i < requestCount; i++) {
     requests.push(sendRequest(url, {"agent": myAgent, "method": "GET"} ))
 }
  
-console.log("submitted all requests");
+console.log("prepared all requests");
 console.timeEnd ("http.request")
 let endRSSAllRequests = process.memoryUsage().rss;
 let endRequest = Date.now() 
 stats[Object.keys(stats)[0]].reqmem = (endRSSAllRequests - startRSS).toLocaleString()
 stats[Object.keys(stats)[0]].reqtime = endRequest - startRequest 
-console.log (`Memory used after sending all requests ${endRequest - startRequest} bytes`)
+console.log (`Memory used after preparing all requests ${(endRSSAllRequests - startRSS).toLocaleString()} bytes`)
 let endRSSAllResponses;
 let endResponse;
 Promise.all(requests).then ( a=> {
@@ -46,10 +46,11 @@ function sendRequest(url, opt) {
     return new Promise( (resolve, reject) => {
         const req = http.request(url, opt,
             (res => {
-                   //set the encoding
                    res.setEncoding('utf-8')
+                    //set the encoding
+                   
                    res.on("data", data => resolve(data))      
-                   res.on("error", err=> reject(err))       
+                   //res.on("error", err=> reject(err))       
             }));
         
        req.end();// must call it to actually send the request 

@@ -7,7 +7,7 @@ const myAgent = new http.Agent({
 });
 
 const requestCount = 100;
-const stats = {"axios":  {"reqtime": 0, "reqmem": 0, "restime": 0, "reqmem": 0}}
+const stats = {"axios":  {"reqtime": 0, "reqmem": 0, "restime": 0, "resmem": 0}}
 const startRequest = Date.now()
 //sending multiple requests
 console.time("http.request")
@@ -24,13 +24,13 @@ for (let i =0; i < requestCount; i++) {
     requests.push(sendRequest(url, {"agent": myAgent, "method": "GET"} ))
 }
  
-console.log("submitted all requests");
+console.log("prepared all requests");
 console.timeEnd ("http.request")
 let endRSSAllRequests = process.memoryUsage().rss;
 let endRequest = Date.now() 
 stats[Object.keys(stats)[0]].reqmem = (endRSSAllRequests - startRSS).toLocaleString()
 stats[Object.keys(stats)[0]].reqtime = endRequest - startRequest 
-console.log (`Memory used after sending all requests ${endRequest - startRequest} bytes`)
+console.log (`Memory used after preparing all requests ${endRequest - startRequest} bytes`)
 let endRSSAllResponses;
 let endResponse;
 Promise.all(requests).then ( a=> {
