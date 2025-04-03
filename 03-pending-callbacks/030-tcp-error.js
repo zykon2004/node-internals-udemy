@@ -28,6 +28,7 @@ const errorHandler = (err, clientName) => {
 };
 // Will be registered in the pending callback
 // That's why timeout is added, to end it early
+// Connections to localhost will be resolved very quickly and not be put on the pending callback queue
 clientFail.connect(9999, "192.168.2.99", () => {
   console.log(`Connected to server at 192.168.2.99:${9999}`);
 });
