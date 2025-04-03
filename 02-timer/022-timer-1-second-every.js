@@ -1,13 +1,11 @@
 let start = Date.now();
-const timerCallback = (a,b) => 
+const timerCallback = (delay) =>
     {
-        console.log(`Timer callback ${a} delayed by ${Date.now() - start - b}`)
+        console.log(`Timer callback ${delay} ms delayed by ${Date.now() - start - delay}`)
         start = Date.now();
-        setTimeout(timerCallback, 1000, '1000 ms',1000); 
-
     };
 
-setTimeout(timerCallback, 1000, '1000 ms',1000); 
+setInterval(timerCallback, 1000, 1000)
 
 //the initial phase sync execute this code (which takes 380 ms), waits for it to finish
 //then goes to the timer phase and noticed all timers are ready except one, so it executes the 4 callbacks at once 
