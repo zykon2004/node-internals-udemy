@@ -4,7 +4,7 @@ console.log("Start Initial phase")
 function promiseWork () {
     console.log("before new promise")
     return new Promise( (resolve, reject) =>  {
-        console.log("before new promise")
+        console.log("inside new promise")
        // setTimeout(() => {
             //done work
             console.log("--Processing...");

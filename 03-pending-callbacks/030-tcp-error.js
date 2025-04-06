@@ -35,6 +35,8 @@ clientFail.connect(9999, "192.168.2.99", () => {
 // Will be registered in the poll callback
 clientSuccess.connect(80, "142.250.188.23", () => {
   console.log(`Connected to server at 142.250.188.23:${80}`);
+  // end is needed to terminate the script. Because if the connection remains open the event loop has something to do.
+  // It keeps calling epoll_wait in the poll phase until either the client or server close the connection.
   clientSuccess.end();
   console.log("Ended 142.250.188.23:80");
 });
